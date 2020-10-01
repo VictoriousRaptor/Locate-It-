@@ -45,4 +45,179 @@ country_event = {
 	}
 }
 
-# 
+# Violate Motes
+country_event = {
+	id = locateit.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = violate_motes
+		}
+	}
+}
+
+# Exotic Gases
+country_event = {
+	id = locateit.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = exotic_gases
+		}
+	}
+}
+
+# Rare Crystal
+country_event = {
+	id = locateit.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = rare_crystal
+		}
+	}
+}
+
+# Dark Matter
+country_event = {
+	id = locateit.5
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_dark_matter
+		}
+	}
+}
+
+# Living Metal
+country_event = {
+	id = locateit.6
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_living_metal
+		}
+	}
+}
+
+# Zro
+country_event = {
+	id = locateit.7
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_zro
+		}
+	}
+}
+
+# Nanites
+country_event = {
+	id = locateit.8
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = nanites
+		}
+	}
+}
+
+# Megastructure
+country_event = {
+	id = locateit.9
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_mega_chain
+			}
+			end_event_chain = locateit_mega_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_mega_chain
+			target = root
+		}
+		country_event = {
+			id = locateit.1
+			days = 30
+		}
+		# every_megastructure = {
+		# 	enable_special_project = {
+		# 		name = "locateit_darkmatter_test"
+		# 		# location = THIS
+		# 		owner = root
+		# 	}
+		# }
+		every_system = {
+			limit = {
+				OR = {
+					has_megastructure = ring_world_ruined
+					has_megastructure = dyson_sphere_ruined
+					has_megastructure = gateway_ruined
+					has_megastructure = interstellar_assembly_ruined
+					has_megastructure = matter_decompressor_ruined
+					has_megastructure = mega_art_installation_ruined
+					has_megastructure = mega_shipyard_ruined
+					has_megastructure = spy_orb_ruined
+					has_megastructure = strategic_coordination_center_ruined
+					has_megastructure = think_tank_ruined
+					has_megastructure = ring_world_restored
+					has_megastructure = dyson_sphere_restored
+					has_megastructure = gateway_restored
+					has_megastructure = interstellar_assembly_restored
+					has_megastructure = matter_decompressor_restored
+					has_megastructure = mega_art_installation_restored
+					has_megastructure = mega_shipyard_restored
+					has_megastructure = spy_orb_restored
+					has_megastructure = strategic_coordination_center_restored
+					has_megastructure = think_tank_restored
+				}
+			}
+			enable_special_project = {
+				name = locateit_darkmatter_test
+				location = system_star
+				owner = root
+			}
+		}
+	}
+}
+
+# Megastructure
+country_event = {
+	id = locateit.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_mega_chain
+			}
+			end_event_chain = locateit_mega_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_mega_chain
+			target = root
+		}
+		country_event = {
+			id = locateit.1
+			days = 30
+		}
+		every_megastructure = {
+			
+			enable_special_project = {
+				name = locateit_darkmatter_test
+				location = system_star
+				owner = root
+			}
+		}
+
+	}
+}

@@ -1,11 +1,33 @@
 special_project = {
 	key = "locateit_darkmatter_test"
 	event_scope = planet_event
-	event_chain = "locateit_chain"
+	event_chain = locateit_chain
 	cost = 0
+	days_to_research = 1
 	timelimit = 30
 	requirements = {
-		shipclass_constructor = 1
+		# shipclass_constructor = 1
 	}
-	on_success = { }
+	on_success = { 
+		owner = {
+			end_event_chain = locateit_chain
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_reource_sp"
+	event_scope = planet_event
+	event_chain = locateit_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	requirements = {
+		# shipclass_constructor = 1
+	}
+	on_success = { 
+		owner = {
+			end_event_chain = locateit_chain
+		}
+	}
 }
