@@ -9,6 +9,13 @@ locateit_find_resource = {
 		event_chain = locateit_chain
 		target = root
 	}
+	capital_star = {
+		enable_special_project = {
+			name = locateit_resource_sp
+			location = THIS
+			owner = root
+		}
+	}
 	every_planet = {
 		limit = {
 			has_resource = $RESOURCE$

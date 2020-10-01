@@ -1,0 +1,19 @@
+has_gate_megastructure = {
+	OR = {
+		has_megastructure = gateway_0
+		has_megastructure = gateway_final
+		has_megastructure = gateway_restored
+		has_megastructure = gateway_ruined
+		has_megastructure = lgate_base
+	}
+}
+
+is_gate = {
+	OR = {
+		is_megastructure_type = gateway_0
+		is_megastructure_type = gateway_final
+		is_megastructure_type = gateway_restored
+		is_megastructure_type = gateway_ruined
+		is_megastructure_type = lgate_base
+	}
+}

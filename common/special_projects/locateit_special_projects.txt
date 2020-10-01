@@ -5,9 +5,6 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = 30
-	requirements = {
-		# shipclass_constructor = 1
-	}
 	on_success = { 
 		owner = {
 			end_event_chain = locateit_chain
@@ -16,18 +13,43 @@ special_project = {
 }
 
 special_project = {
-	key = "locateit_reource_sp"
+	key = "locateit_resource_sp"
 	event_scope = planet_event
 	event_chain = locateit_chain
 	cost = 0
 	days_to_research = 1
 	timelimit = 3600
-	requirements = {
-		# shipclass_constructor = 1
-	}
 	on_success = { 
-		owner = {
-			end_event_chain = locateit_chain
+		fromfrom = {
+			country_event = {
+				id = locateit.100
+			}
 		}
+	}
+	on_fail = {
+		
+	}
+}
+
+special_project = {
+	key = "locateit_megastructure_sp"
+	event_scope = planet_event
+	event_chain = locateit_mega_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfrom = {
+			country_event = {
+				id = locateit.200
+			}
+		}
+			# planet_event = {
+			# 	id = locateit.201
+			# }
+		
+	}
+	on_fail = {
+		
 	}
 }
