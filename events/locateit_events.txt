@@ -94,7 +94,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_find_resource = {
-			RESOURCE = violate_motes
+			RESOURCE = volatile_motes
 		}
 	}
 }
