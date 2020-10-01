@@ -16,10 +16,10 @@ country_event = {
 			event_chain = locateit_chain
 			target = root
 		}
-		country_event = {
-			id = locateit.1
-			days = 30
-		}
+		# country_event = {
+		# 	id = locateit.1
+		# 	days = 30
+		# }
 		every_planet = {
 			limit = {
 				has_resource = rare_crystals
@@ -36,13 +36,264 @@ country_event = {
 
 # Cleaner
 country_event = {
-	id = locateit.1
+	id = locateit.100
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		end_event_chain = locateit_chain
-		end_event_chain = locateit_mega_chain
+		if = {
+			limit = { has_event_chain = locateit_chain }
+			end_event_chain = locateit_chain
+		}
 	}
 }
 
-# 
+planet_event = {
+	id = locateit.101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			if = {
+				limit = { has_event_chain = locateit_chain }
+				end_event_chain = locateit_chain
+			}
+		}
+	}
+}
+
+country_event = {
+	id = locateit.200
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_mega_chain }
+			end_event_chain = locateit_mega_chain
+		}
+	}
+}
+
+planet_event = {
+	id = locateit.201
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			if = {
+				limit = { has_event_chain = locateit_mega_chain }
+				end_event_chain = locateit_mega_chain
+			}
+		}
+	}
+}
+
+# Violate Motes
+country_event = {
+	id = locateit.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = volatile_motes
+		}
+	}
+}
+
+# Exotic Gases
+country_event = {
+	id = locateit.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = exotic_gases
+		}
+	}
+}
+
+# Rare Crystal
+country_event = {
+	id = locateit.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = rare_crystal
+		}
+	}
+}
+
+# Dark Matter
+country_event = {
+	id = locateit.5
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_dark_matter
+		}
+	}
+}
+
+# Living Metal
+country_event = {
+	id = locateit.6
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_living_metal
+		}
+	}
+}
+
+# Zro
+country_event = {
+	id = locateit.7
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = sr_zro
+		}
+	}
+}
+
+# Nanites
+country_event = {
+	id = locateit.8
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_resource = {
+			RESOURCE = nanites
+		}
+	}
+}
+
+# Megastructures, not including gates
+country_event = {
+	id = locateit.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_mega_chain
+			}
+			end_event_chain = locateit_mega_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_mega_chain
+			target = root
+		}
+		# every_system = {
+		# 	limit = {
+		# 		has_any_megastructure = yes
+		# 	}
+		# 	enable_special_project = {
+		# 		name = locateit_megastructure_sp
+		# 		location = system_star
+		# 		owner = root
+		# 	}
+		# }
+		capital_star = {
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+		every_megastructure = {
+			limit = {
+				is_gate = no
+			}
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+	}
+}
+
+# Gateways
+country_event = {
+	id = locateit.11
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_mega_chain
+			}
+			end_event_chain = locateit_mega_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_mega_chain
+			target = root
+		}
+		# country_event = {
+		# 	id = locateit.1
+		# 	days = 30
+		# }
+		capital_star = {
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+		every_megastructure = {
+			limit = {
+				is_gate = yes
+			}
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+	}
+}
+
+# Wormholes
+country_event = {
+	id = locateit.12
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_mega_chain
+			}
+			end_event_chain = locateit_mega_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_mega_chain
+			target = root
+		}
+		# country_event = {
+		# 	id = locateit.1
+		# 	days = 30
+		# }
+		capital_star = {
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+		every_system = {
+			limit = {
+				has_natural_wormhole = yes
+			}
+			enable_special_project = {
+				name = locateit_megastructure_sp
+				location = system_star
+				owner = root
+			}
+		}
+
+	}
+}
