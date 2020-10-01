@@ -1,17 +1,18 @@
 locateit_find_resource = {
 	if = {
 		limit = { 
-			has_event_chain = locateit_chain
+			has_event_chain = locateit_res_chain
 		}
-		end_event_chain = locateit_chain
+		end_event_chain = locateit_res_chain
 	}
 	begin_event_chain = {
-		event_chain = locateit_chain
+		event_chain = locateit_res_chain
 		target = root
 	}
+	# Assure that at least one SP can be researched
 	capital_star = {
 		enable_special_project = {
-			name = locateit_resource_sp
+			name = locateit_resource_sp_capital
 			location = THIS
 			owner = root
 		}
@@ -19,10 +20,35 @@ locateit_find_resource = {
 	every_planet = {
 		limit = {
 			has_resource = $RESOURCE$
+			# Must be surveyed or controlled by other empires
+			is_surveyed = {
+				who = root
+				status = yes
+			}
 		}
 		enable_special_project = {
 			name = locateit_resource_sp
 			location = THIS
+			owner = root
+		}
+	}
+}
+
+locateit_find_megastructure = {
+	if = {
+		limit = { 
+			has_event_chain = $CHAIN_NAME$
+		}
+		end_event_chain = $CHAIN_NAME$
+	}
+	begin_event_chain = {
+		event_chain = $CHAIN_NAME$
+		target = root
+	}
+	capital_star = {
+		enable_special_project = {
+			name = $PROJECT_NAME$
+			location = system_star
 			owner = root
 		}
 	}

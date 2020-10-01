@@ -1,9 +1,24 @@
-locateit_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
-	picture = GFX_evt_archaeological_dig
+locateit_res_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_mining_station
 }
 
 locateit_mega_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
-	picture = GFX_evt_archaeological_dig
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_ringworld
+}
+
+locateit_gate_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_l-gateway
+}
+
+locateit_lgate_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_l-gateway
+}
+
+locateit_wormhole_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_wormhole
 }

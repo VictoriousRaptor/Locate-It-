@@ -1,21 +1,30 @@
 special_project = {
-	key = "locateit_darkmatter_test"
+	key = "locateit_resource_sp"
 	event_scope = planet_event
-	event_chain = locateit_chain
+	event_chain = locateit_res_chain
 	cost = 0
 	days_to_research = 1
-	timelimit = 30
+	timelimit = 3600
 	on_success = { 
-		owner = {
-			end_event_chain = locateit_chain
+		fromfrom = {
+			country_event = {
+				id = locateit.100
+			}
+		}
+	}
+	on_fail = {
+		fromfrom = {
+			country_event = {
+				id = locateit.100
+			}
 		}
 	}
 }
 
 special_project = {
-	key = "locateit_resource_sp"
+	key = "locateit_resource_sp_capital"
 	event_scope = planet_event
-	event_chain = locateit_chain
+	event_chain = locateit_res_chain
 	cost = 0
 	days_to_research = 1
 	timelimit = 3600
@@ -53,6 +62,167 @@ special_project = {
 		fromfromfrom = {
 			country_event = {
 				id = locateit.200
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_megastructure_sp_captial"
+	event_scope = planet_event
+	event_chain = locateit_mega_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.200
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.200
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_gate_sp"
+	event_scope = planet_event
+	event_chain = locateit_gate_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.201
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.201
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_gate_sp_captial"
+	event_scope = planet_event
+	event_chain = locateit_gate_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.201
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.201
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_lgate_sp"
+	event_scope = planet_event
+	event_chain = locateit_lgate_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.202
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.202
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_lgate_sp_captial"
+	event_scope = planet_event
+	event_chain = locateit_lgate_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.202
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.202
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_wormhole_sp"
+	event_scope = planet_event
+	event_chain = locateit_wormhole_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.203
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.203
+			}
+		}
+	}
+}
+
+special_project = {
+	key = "locateit_wormhole_sp_captial"
+	event_scope = planet_event
+	event_chain = locateit_wormhole_chain
+	cost = 0
+	days_to_research = 1
+	timelimit = 3600
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.203
+			}
+		}
+	}
+	on_fail = {
+		fromfromfrom = {
+			country_event = {
+				id = locateit.203
 			}
 		}
 	}

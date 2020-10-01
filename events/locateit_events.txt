@@ -1,39 +1,5 @@
 namespace = locateit
 
-# Test
-country_event = {
-	id = locateit.0
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		if = {
-			limit = { 
-				has_event_chain = locateit_chain
-			}
-			end_event_chain = locateit_chain
-		}
-		begin_event_chain = {
-			event_chain = locateit_chain
-			target = root
-		}
-		# country_event = {
-		# 	id = locateit.1
-		# 	days = 30
-		# }
-		every_planet = {
-			limit = {
-				has_resource = rare_crystals
-			}
-			enable_special_project = {
-				name = "locateit_darkmatter_test"
-				location = THIS
-				owner = root
-			}
-		}
-
-	}
-}
-
 # Cleaner
 country_event = {
 	id = locateit.100
@@ -41,22 +7,8 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_chain }
-			end_event_chain = locateit_chain
-		}
-	}
-}
-
-planet_event = {
-	id = locateit.101
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		owner = {
-			if = {
-				limit = { has_event_chain = locateit_chain }
-				end_event_chain = locateit_chain
-			}
+			limit = { has_event_chain = locateit_res_chain }
+			end_event_chain = locateit_res_chain
 		}
 	}
 }
@@ -73,19 +25,42 @@ country_event = {
 	}
 }
 
-planet_event = {
+country_event = {
 	id = locateit.201
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		owner = {
-			if = {
-				limit = { has_event_chain = locateit_mega_chain }
-				end_event_chain = locateit_mega_chain
-			}
+		if = {
+			limit = { has_event_chain = locateit_gate_chain }
+			end_event_chain = locateit_gate_chain
 		}
 	}
 }
+
+country_event = {
+	id = locateit.202
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_lgate_chain }
+			end_event_chain = locateit_lgate_chain
+		}
+	}
+}
+
+country_event = {
+	id = locateit.203
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_wormhole_chain }
+			end_event_chain = locateit_wormhole_chain
+		}
+	}
+}
+
 
 # Violate Motes
 country_event = {
@@ -177,41 +152,26 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		if = {
-			limit = { 
-				has_event_chain = locateit_mega_chain
-			}
-			end_event_chain = locateit_mega_chain
-		}
-		begin_event_chain = {
-			event_chain = locateit_mega_chain
-			target = root
-		}
-		# every_system = {
-		# 	limit = {
-		# 		has_any_megastructure = yes
-		# 	}
-		# 	enable_special_project = {
-		# 		name = locateit_megastructure_sp
-		# 		location = system_star
-		# 		owner = root
-		# 	}
-		# }
-		capital_star = {
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
-			}
+		locateit_find_megastructure = {
+			PROJECT_NAME = locateit_megastructure_sp_captial
+			CHAIN_NAME = locateit_mega_chain
 		}
 		every_megastructure = {
 			limit = {
-				is_gate = no
+				NOR = {
+					is_gate = yes
+					is_megastructure_type = lgate_base
+				}
 			}
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
+			if = {
+				limit = {
+					locateit_valid_system = yes
+				}
+				enable_special_project = {
+					name = locateit_megastructure_sp
+					location = star
+					owner = root
+				}
 			}
 		}
 	}
@@ -223,35 +183,51 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		if = {
-			limit = { 
-				has_event_chain = locateit_mega_chain
-			}
-			end_event_chain = locateit_mega_chain
-		}
-		begin_event_chain = {
-			event_chain = locateit_mega_chain
-			target = root
-		}
-		# country_event = {
-		# 	id = locateit.1
-		# 	days = 30
-		# }
-		capital_star = {
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
-			}
+		locateit_find_megastructure = {
+			PROJECT_NAME = locateit_gate_sp_captial
+			CHAIN_NAME = locateit_gate_chain
 		}
 		every_megastructure = {
 			limit = {
 				is_gate = yes
 			}
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
+			if = {
+				limit = {
+					locateit_valid_system = yes
+				}
+				enable_special_project = {
+					name = locateit_gate_sp
+					location = star
+					owner = root
+				}
+			}
+		}
+	}
+}
+
+# L-Gates
+country_event = {
+	id = locateit.12
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_find_megastructure = {
+			PROJECT_NAME = locateit_lgate_sp_captial
+			CHAIN_NAME = locateit_lgate_chain
+		}
+		every_megastructure = {
+			limit = {
+				is_megastructure_type = lgate_base
+			}
+			if = {
+				limit = {
+					locateit_valid_system = yes
+				}
+				enable_special_project = {
+					name = locateit_lgate_sp
+					location = star
+					owner = root
+				}
 			}
 		}
 	}
@@ -259,39 +235,27 @@ country_event = {
 
 # Wormholes
 country_event = {
-	id = locateit.12
+	id = locateit.13
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		if = {
-			limit = { 
-				has_event_chain = locateit_mega_chain
-			}
-			end_event_chain = locateit_mega_chain
-		}
-		begin_event_chain = {
-			event_chain = locateit_mega_chain
-			target = root
-		}
-		# country_event = {
-		# 	id = locateit.1
-		# 	days = 30
-		# }
-		capital_star = {
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
-			}
+		locateit_find_megastructure = {
+			PROJECT_NAME = locateit_wormhole_sp_captial
+			CHAIN_NAME = locateit_wormhole_chain
 		}
 		every_system = {
 			limit = {
 				has_natural_wormhole = yes
 			}
-			enable_special_project = {
-				name = locateit_megastructure_sp
-				location = system_star
-				owner = root
+			if = {
+				limit = {
+					locateit_valid_system = yes
+				}
+				enable_special_project = {
+					name = locateit_wormhole_sp
+					location = star
+					owner = root
+				}
 			}
 		}
 
