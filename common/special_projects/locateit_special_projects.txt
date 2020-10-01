@@ -1,0 +1,11 @@
+special_project = {
+	key = "locateit_darkmatter_test"
+	event_scope = planet_event
+	event_chain = "locateit_chain"
+	cost = 0
+	timelimit = 30
+	requirements = {
+		shipclass_constructor = 1
+	}
+	on_success = { }
+}

@@ -1,0 +1,48 @@
+namespace = locateit
+
+# Test
+country_event = {
+	id = locateit.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_chain
+			}
+			end_event_chain = locateit_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_chain
+			target = root
+		}
+		country_event = {
+			id = locateit.1
+			days = 30
+		}
+		every_planet = {
+			limit = {
+				has_resource = rare_crystals
+			}
+			enable_special_project = {
+				name = "locateit_darkmatter_test"
+				location = THIS
+				owner = root
+			}
+		}
+
+	}
+}
+
+# Cleaner
+country_event = {
+	id = locateit.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		end_event_chain = locateit_chain
+		end_event_chain = locateit_mega_chain
+	}
+}
+
+# 

@@ -1,0 +1,22 @@
+locateit_find_resource = {
+	if = {
+		limit = { 
+			has_event_chain = locateit_chain
+		}
+		end_event_chain = locateit_chain
+	}
+	begin_event_chain = {
+		event_chain = locateit_chain
+		target = root
+	}
+	every_planet = {
+		limit = {
+			has_resource = $resource$
+		}
+		enable_special_project = {
+			name = locateit_darkmatter_test
+			location = THIS
+			owner = root
+		}
+	}
+}
