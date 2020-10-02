@@ -59,7 +59,7 @@ country_event = {
 	picture = GFX_evt_mining_station
 	is_triggered_only = yes
 
-	# Violate Motes
+	# Volatile Motes
 	option = {
 		name = locateit_menu.2.0
 		custom_tooltip = locateit_menu.2.0.tooltip
