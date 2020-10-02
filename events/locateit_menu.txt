@@ -4,12 +4,13 @@ country_event = {
 	id = locateit_menu.1
 	title = "locateit_menu.1.name"
 	desc = "locateit_menu.1.desc"
-	picture = GFX_evt_scanning_remains
+	picture = GFX_evt_satellite_in_orbit
 	is_triggered_only = yes
 
 	# Strategic Resources
 	option = {
 		name = locateit_menu_sr_entry
+		custom_tooltip = locateit_menu_sr_entry.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit_menu.2
@@ -20,6 +21,7 @@ country_event = {
 	# Megastructures
 	option = {
 		name = locateit_menu_mega_entry
+		custom_tooltip = locateit_menu_mega_entry.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit_menu.3
@@ -29,7 +31,8 @@ country_event = {
 
 	# Debug
 	option = {
-		name = locateit_menu_mega_entry
+		name = locateit_menu_clr_entry
+		custom_tooltip = locateit_menu_clr_entry.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.101
@@ -40,7 +43,10 @@ country_event = {
 	option = {
 		name = modmenu_exit
 		hidden_effect = {
-			set_global_flag = locateit_installed
+			if = {
+				limit = { NOT = { has_global_flag = locateit_activated } }
+				set_global_flag = locateit_activated
+			}
 		}
 	}
 }
@@ -50,7 +56,7 @@ country_event = {
 	id = locateit_menu.2
 	title = "locateit_menu.2.name"
 	desc = "locateit_menu.2.desc"
-	picture = GFX_evt_scanning_remains
+	picture = GFX_evt_mining_station
 	is_triggered_only = yes
 
 	# Violate Motes
@@ -75,7 +81,7 @@ country_event = {
 		}
 	}
 
-	# Rare Crystal
+	# Rare Crystals
 	option = {
 		name = locateit_menu.2.2
 		custom_tooltip = locateit_menu.2.2.tooltip
@@ -148,13 +154,13 @@ country_event = {
 	id = locateit_menu.3
 	title = "locateit_menu.3.name"
 	desc = "locateit_menu.3.desc"
-	picture = GFX_evt_ringworld
+	picture = GFX_evt_dyson_sphere
 	is_triggered_only = yes
 
 	# Megastructures
 	option = {
 		name = locateit_menu.3.0
-		custom_tooltip = locateit_menu.3.0.tooltip
+		# custom_tooltip = locateit_menu.3.0.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.10
@@ -165,7 +171,7 @@ country_event = {
 	# Gateways
 	option = {
 		name = locateit_menu.3.1
-		custom_tooltip = locateit_menu.3.1.tooltip
+		# custom_tooltip = locateit_menu.3.1.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.11
@@ -176,7 +182,7 @@ country_event = {
 	# L-Gates
 	option = {
 		name = locateit_menu.3.2
-		custom_tooltip = locateit_menu.3.2.tooltip
+		# custom_tooltip = locateit_menu.3.2.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.12
@@ -184,10 +190,10 @@ country_event = {
 		}
 	}
 
-	# L-Gates
+	# Wormholes
 	option = {
 		name = locateit_menu.3.3
-		custom_tooltip = locateit_menu.3.3.tooltip
+		# custom_tooltip = locateit_menu.3.3.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.13

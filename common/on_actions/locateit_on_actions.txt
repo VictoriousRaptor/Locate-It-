@@ -3,3 +3,9 @@ on_game_start = {
 		locateit.0
 	}
 }
+
+on_monthly_pulse = {
+	events = {
+		locateit.0
+	}
+}

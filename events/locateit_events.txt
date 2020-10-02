@@ -5,7 +5,10 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		set_global_flag = locateit_activated
+		if = {
+			limit = { NOT = { has_global_flag = locateit_activated } }
+			set_global_flag = locateit_activated
+		}
 	}
 }
 
@@ -22,6 +25,7 @@ country_event = {
 	}
 }
 
+# Clear all
 country_event = {
 	id = locateit.101
 	hide_window = yes
@@ -118,14 +122,14 @@ country_event = {
 	}
 }
 
-# Rare Crystal
+# Rare Crystals
 country_event = {
 	id = locateit.4
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		locateit_find_resource = {
-			RESOURCE = rare_crystal
+			RESOURCE = rare_crystals
 		}
 	}
 }
