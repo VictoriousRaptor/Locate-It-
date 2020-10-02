@@ -1,5 +1,17 @@
 namespace = locateit
 
+event = {
+	id = locateit.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { NOT = { has_global_flag = locateit_activated } }
+			set_global_flag = locateit_activated
+		}
+	}
+}
+
 # Cleaner
 country_event = {
 	id = locateit.100
@@ -9,6 +21,30 @@ country_event = {
 		if = {
 			limit = { has_event_chain = locateit_res_chain }
 			end_event_chain = locateit_res_chain
+		}
+	}
+}
+
+# Clear all
+country_event = {
+	id = locateit.101
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = locateit.100
+		}
+		country_event = {
+			id = locateit.200
+		}
+		country_event = {
+			id = locateit.201
+		}
+		country_event = {
+			id = locateit.202
+		}
+		country_event = {
+			id = locateit.203
 		}
 	}
 }
@@ -86,14 +122,14 @@ country_event = {
 	}
 }
 
-# Rare Crystal
+# Rare Crystals
 country_event = {
 	id = locateit.4
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		locateit_find_resource = {
-			RESOURCE = rare_crystal
+			RESOURCE = rare_crystals
 		}
 	}
 }

@@ -1,6 +1,6 @@
 locateit_res_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	picture = GFX_evt_mining_station
+	picture = GFX_evt_resource_cache
 }
 
 locateit_mega_chain = {
@@ -10,7 +10,7 @@ locateit_mega_chain = {
 
 locateit_gate_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	picture = GFX_evt_l-gateway
+	picture = GFX_evt_federation_fleet
 }
 
 locateit_lgate_chain = {
