@@ -10,7 +10,7 @@ locateit_mega_chain = {
 
 locateit_gate_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
-	picture = GFX_evt_federation_fleet  # TODO change it
+	picture = GFX_evt_drifting_gateway
 }
 
 locateit_lgate_chain = {
