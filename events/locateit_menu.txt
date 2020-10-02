@@ -1,0 +1,211 @@
+namespace = locateit_menu
+
+country_event = {
+	id = locateit_menu.1
+	title = "locateit_menu.1.name"
+	desc = "locateit_menu.1.desc"
+	picture = GFX_evt_scanning_remains
+	is_triggered_only = yes
+
+	# Strategic Resources
+	option = {
+		name = locateit_menu_sr_entry
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.2
+			}
+		}
+	}
+
+	# Megastructures
+	option = {
+		name = locateit_menu_mega_entry
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.3
+			}
+		}
+	}
+
+	# Debug
+	option = {
+		name = locateit_menu_mega_entry
+		hidden_effect = {
+			country_event = {
+				id = locateit.101
+			}
+		}
+	}
+
+	option = {
+		name = modmenu_exit
+		hidden_effect = {
+			set_global_flag = locateit_installed
+		}
+	}
+}
+
+# Strategic Resources
+country_event = {
+	id = locateit_menu.2
+	title = "locateit_menu.2.name"
+	desc = "locateit_menu.2.desc"
+	picture = GFX_evt_scanning_remains
+	is_triggered_only = yes
+
+	# Violate Motes
+	option = {
+		name = locateit_menu.2.0
+		custom_tooltip = locateit_menu.2.0.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.2
+			}
+		}
+	}
+
+	# Exotic Gases
+	option = {
+		name = locateit_menu.2.1
+		custom_tooltip = locateit_menu.2.1.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.3
+			}
+		}
+	}
+
+	# Rare Crystal
+	option = {
+		name = locateit_menu.2.2
+		custom_tooltip = locateit_menu.2.2.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.4
+			}
+		}
+	}
+
+	# Dark Matter
+	option = {
+		name = locateit_menu.2.3
+		custom_tooltip = locateit_menu.2.3.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.5
+			}
+		}
+	}
+
+	# Living Metal
+	option = {
+		name = locateit_menu.2.4
+		custom_tooltip = locateit_menu.2.4.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.6
+			}
+		}
+	}
+
+	# Zro
+	option = {
+		name = locateit_menu.2.5
+		custom_tooltip = locateit_menu.2.5.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.7
+			}
+		}
+	}
+
+	# Nanites
+	option = {
+		name = locateit_menu.2.6
+		custom_tooltip = locateit_menu.2.6.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.8
+			}
+		}
+	}
+
+	option = {
+		name = modmenu_return
+		custom_tooltip = modmenu_return
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.1
+			}
+		}
+	}
+	option = {
+		name = modmenu_exit
+	}
+}
+
+country_event = {
+	id = locateit_menu.3
+	title = "locateit_menu.3.name"
+	desc = "locateit_menu.3.desc"
+	picture = GFX_evt_ringworld
+	is_triggered_only = yes
+
+	# Megastructures
+	option = {
+		name = locateit_menu.3.0
+		custom_tooltip = locateit_menu.3.0.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.10
+			}
+		}
+	}
+
+	# Gateways
+	option = {
+		name = locateit_menu.3.1
+		custom_tooltip = locateit_menu.3.1.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.11
+			}
+		}
+	}
+
+	# L-Gates
+	option = {
+		name = locateit_menu.3.2
+		custom_tooltip = locateit_menu.3.2.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.12
+			}
+		}
+	}
+
+	# L-Gates
+	option = {
+		name = locateit_menu.3.3
+		custom_tooltip = locateit_menu.3.3.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.13
+			}
+		}
+	}
+
+	option = {
+		name = modmenu_return
+		# custom_tooltip = modmenu_return
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.1
+			}
+		}
+	}
+
+	option = {
+		name = modmenu_exit
+	}
+}
