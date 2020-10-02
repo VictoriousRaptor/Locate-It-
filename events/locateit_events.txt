@@ -188,7 +188,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		locateit_find_megastructure = {
+		locateit_mega_set_chain = {
 			PROJECT_NAME = locateit_megastructure_sp_captial
 			CHAIN_NAME = locateit_mega_chain
 		}
@@ -201,7 +201,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					locateit_valid_system = yes
+					locateit_in_valid_system = yes
 				}
 				enable_special_project = {
 					name = locateit_megastructure_sp
@@ -219,7 +219,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		locateit_find_megastructure = {
+		locateit_mega_set_chain = {
 			PROJECT_NAME = locateit_gate_sp_captial
 			CHAIN_NAME = locateit_gate_chain
 		}
@@ -229,7 +229,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					locateit_valid_system = yes
+					locateit_in_valid_system = yes
 				}
 				enable_special_project = {
 					name = locateit_gate_sp
@@ -247,7 +247,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		locateit_find_megastructure = {
+		locateit_mega_set_chain = {
 			PROJECT_NAME = locateit_lgate_sp_captial
 			CHAIN_NAME = locateit_lgate_chain
 		}
@@ -257,7 +257,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					locateit_valid_system = yes
+					locateit_in_valid_system = yes
 				}
 				enable_special_project = {
 					name = locateit_lgate_sp
@@ -275,7 +275,7 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		locateit_find_megastructure = {
+		locateit_mega_set_chain = {
 			PROJECT_NAME = locateit_wormhole_sp_captial
 			CHAIN_NAME = locateit_wormhole_chain
 		}
@@ -285,7 +285,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					locateit_valid_system = yes
+					locateit_in_valid_system = yes
 				}
 				enable_special_project = {
 					name = locateit_wormhole_sp

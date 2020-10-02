@@ -34,7 +34,7 @@ locateit_find_resource = {
 	}
 }
 
-locateit_find_megastructure = {
+locateit_mega_set_chain = {
 	if = {
 		limit = { 
 			has_event_chain = $CHAIN_NAME$
