@@ -1,17 +1,18 @@
 ﻿l_simp_chinese:
  
  # Special Projects
+ loacateit_track_all:0 "“$TRACK_ALL$”以在地图上标示。"
  locateit_research_to_mute:0 "研究以取消显示"
  locateit_res_chain_title:0 "战略资源位置"
- locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。"
+ locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。$TRACK_ALL$以在地图上标示。"
  locateit_mega_chain_title:0 "$megastructures$位置"
- locateit_mega_chain_desc:0 "所有已知$megastructures$的位置（不包括$gateway_final$、$lgate$）。"
+ locateit_mega_chain_desc:0 "所有已知$megastructures$的位置（不包括$gateway_final$、$lgate$）。$loacateit_track_all$"
  locateit_gate_chain_title:0 "$gateway_final$位置"
- locateit_gate_chain_desc:0 "所有已知$gateway_final$的位置（包括失效的、建造中的）。"
+ locateit_gate_chain_desc:0 "所有已知$gateway_final$的位置（包括失效的、建造中的）。$loacateit_track_all$"
  locateit_lgate_chain_title:0 "$lgate$位置"
- locateit_lgate_chain_desc:0 "所有已知$lgate$的位置。"
+ locateit_lgate_chain_desc:0 "所有已知$lgate$的位置。$loacateit_track_all$"
  locateit_wormhole_chain_title:0 "$apoc.5.name$位置" # 虫洞
- locateit_wormhole_chain_desc:0 "所有已知$apoc.5.name$的位置。"
+ locateit_wormhole_chain_desc:0 "所有已知$apoc.5.name$的位置。$loacateit_track_all$"
  locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
  locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$。防止没有其他可用的研究项。"
  locateit_resource_sp:0 "战略资源点"

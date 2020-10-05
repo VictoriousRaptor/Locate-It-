@@ -1,17 +1,18 @@
 ﻿l_spanish:
  
- # Special Projects
+# Special Projects
+ loacateit_track_all:0 ""$TRACK_ALL$" to pin them on map."
  locateit_research_to_mute:0 "Research to hide all"
  locateit_res_chain_title:0 "Locations of Strategic Resource"
- locateit_res_chain_desc:0 "All known locations of this strategic resource."
+ locateit_res_chain_desc:0 "All known locations of this strategic resource. $loacateit_track_all$"
  locateit_mega_chain_title:0 "Locations of $megastructures$"
- locateit_mega_chain_desc:0 "All known locations of $megastructures$ (not including $gateway_final$ and $lgate_base$)."
+ locateit_mega_chain_desc:0 "All known locations of $megastructures$ (not including $gateway_final$ and $lgate_base$). $loacateit_track_all$"
  locateit_gate_chain_title:0 "Locations of $gateway_final$s"
- locateit_gate_chain_desc:0 "All known locations of $gateway_final$s (including abandoned and under construction ones)."
+ locateit_gate_chain_desc:0 "All known locations of $gateway_final$s (including abandoned and under construction ones). $loacateit_track_all$"
  locateit_lgate_chain_title:0 "Locations of $lgates$s"
- locateit_lgate_chain_desc:0 "All known locations of $lgates$."
+ locateit_lgate_chain_desc:0 "All known locations of $lgates$. $loacateit_track_all$"
  locateit_wormhole_chain_title:0 "Locations of $apoc.5.name$s"
- locateit_wormhole_chain_desc:0 "All known locations of $apoc.5.name$s."
+ locateit_wormhole_chain_desc:0 "All known locations of $apoc.5.name$s. $loacateit_track_all$"
  locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
  locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$. Just in case that you can't research any other."
  locateit_resource_sp:0 "Strategic Resource"
@@ -39,7 +40,7 @@
  locateit_menu.1.desc:0 "Please select what you want to locate:"
  locateit_menu_sr_entry:0 "Strategic resources."
  locateit_menu_sr_entry.tooltip:0 "Select a kind of strategic resource and mark it on your map."
- locateit_menu_mega_entry:0 "$megastructures$"
+ locateit_menu_mega_entry:0 "$megastructures$."
  locateit_menu_mega_entry.tooltip:0 "Select $megastructures$ and mark them on your map."
  locateit_menu_clr_entry:0 "Clear all markers."
  locateit_menu_clr_entry.tooltip:0 "Clear all existing markers."
