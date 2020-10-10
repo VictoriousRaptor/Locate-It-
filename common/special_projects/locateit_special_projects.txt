@@ -71,7 +71,7 @@ special_project = {
 }
 
 special_project = {
-	key = "locateit_megastructure_sp_captial"
+	key = "locateit_megastructure_sp_capital"
 	event_scope = planet_event
 	event_chain = locateit_mega_chain
 	picture = GFX_evt_glitchy_matrix
@@ -119,7 +119,7 @@ special_project = {
 }
 
 special_project = {
-	key = "locateit_gate_sp_captial"
+	key = "locateit_gate_sp_capital"
 	event_scope = planet_event
 	event_chain = locateit_gate_chain
 	picture = GFX_evt_glitchy_matrix
@@ -167,7 +167,7 @@ special_project = {
 }
 
 special_project = {
-	key = "locateit_lgate_sp_captial"
+	key = "locateit_lgate_sp_capital"
 	event_scope = planet_event
 	event_chain = locateit_lgate_chain
 	picture = GFX_evt_glitchy_matrix
@@ -215,7 +215,7 @@ special_project = {
 }
 
 special_project = {
-	key = "locateit_wormhole_sp_captial"
+	key = "locateit_wormhole_sp_capital"
 	event_scope = planet_event
 	event_chain = locateit_wormhole_chain
 	picture = GFX_evt_glitchy_matrix

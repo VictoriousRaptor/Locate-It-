@@ -253,7 +253,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_megastructure_sp_captial
+			PROJECT_NAME = locateit_megastructure_sp_capital
 			CHAIN_NAME = locateit_mega_chain
 		}
 		every_megastructure = {
@@ -284,7 +284,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_gate_sp_captial
+			PROJECT_NAME = locateit_gate_sp_capital
 			CHAIN_NAME = locateit_gate_chain
 		}
 		every_megastructure = {
@@ -312,7 +312,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_lgate_sp_captial
+			PROJECT_NAME = locateit_lgate_sp_capital
 			CHAIN_NAME = locateit_lgate_chain
 		}
 		every_megastructure = {
@@ -340,7 +340,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_wormhole_sp_captial
+			PROJECT_NAME = locateit_wormhole_sp_capital
 			CHAIN_NAME = locateit_wormhole_chain
 		}
 		every_system = {
