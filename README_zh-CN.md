@@ -21,6 +21,10 @@
 
 在情报日志中的相关事件链中研究任意一项即可。注意，*你的首都保证会有一项，*以防你没有办法研究其他任何项目。
 
+## 排序
+
+放在Mod Menu下面。
+
 ## Others
 
 [GitHub Repository](https://github.com/VictoriousRaptor/Locate-It-)

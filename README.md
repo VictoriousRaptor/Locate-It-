@@ -21,6 +21,10 @@ Tired of finding living metal on your galaxy map? Busy checking your system one 
 
 Just research any related entry. *There is always one on your capital star* in case that you don't have access to any other project.
 
+## Load Order
+
+Put this mod under Mod Menu.
+
 ## Others
 
 [GitHub Repository](https://github.com/VictoriousRaptor/Locate-It-)
