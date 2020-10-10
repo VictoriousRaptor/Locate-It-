@@ -4,6 +4,12 @@ Tired of finding living metal on your galaxy map? Busy checking your system one 
 
 **This mod helps you locate strategic resources and megastructures. It can mark strategic resources or megastructures in surveyed systems on your map.**
 
+## Features
+
+1. Pin strategic resources and megastructures on your map.
+2. Pin unexploited strategic resources within your border.
+3. Also pin upgradable megastructures within your border.
+
 ## Usage
 
 1. Just ignore it if you're playing a newgame.
