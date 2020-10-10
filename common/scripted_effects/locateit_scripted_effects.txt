@@ -10,7 +10,7 @@ locateit_find_resource = {
 		target = root
 	}
 	# Assure that at least one SP can be researched
-	capital_star = {
+	capital_scope = {
 		enable_special_project = {
 			name = locateit_resource_sp_capital
 			location = THIS
@@ -45,10 +45,10 @@ locateit_mega_set_chain = {
 		event_chain = $CHAIN_NAME$
 		target = root
 	}
-	capital_star = {
+	capital_scope = {
 		enable_special_project = {
 			name = $PROJECT_NAME$
-			location = system_star
+			location = THIS
 			owner = root
 		}
 	}
