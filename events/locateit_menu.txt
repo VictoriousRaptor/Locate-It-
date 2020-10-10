@@ -35,7 +35,7 @@ country_event = {
 		custom_tooltip = locateit_menu_clr_entry.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.101
+				id = locateit.11
 			}
 		}
 	}
@@ -65,7 +65,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.0.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.2
+				id = locateit.102
 			}
 		}
 	}
@@ -76,7 +76,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.1.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.3
+				id = locateit.103
 			}
 		}
 	}
@@ -87,7 +87,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.2.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.4
+				id = locateit.104
 			}
 		}
 	}
@@ -98,7 +98,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.3.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.5
+				id = locateit.105
 			}
 		}
 	}
@@ -109,7 +109,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.4.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.6
+				id = locateit.106
 			}
 		}
 	}
@@ -120,7 +120,7 @@ country_event = {
 		custom_tooltip = locateit_menu.2.5.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.7
+				id = locateit.107
 			}
 		}
 	}
@@ -131,7 +131,18 @@ country_event = {
 		custom_tooltip = locateit_menu.2.6.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.8
+				id = locateit.108
+			}
+		}
+	}
+
+	# Unexploited
+	option = {
+		name = locateit_menu.2.7
+		# custom_tooltip = locateit_menu.2.7.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.109
 			}
 		}
 	}
@@ -163,7 +174,7 @@ country_event = {
 		# custom_tooltip = locateit_menu.3.0.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.10
+				id = locateit.200
 			}
 		}
 	}
@@ -174,7 +185,7 @@ country_event = {
 		# custom_tooltip = locateit_menu.3.1.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.11
+				id = locateit.201
 			}
 		}
 	}
@@ -185,7 +196,7 @@ country_event = {
 		# custom_tooltip = locateit_menu.3.2.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.12
+				id = locateit.202
 			}
 		}
 	}
@@ -196,7 +207,17 @@ country_event = {
 		# custom_tooltip = locateit_menu.3.3.tooltip
 		hidden_effect = {
 			country_event = {
-				id = locateit.13
+				id = locateit.203
+			}
+		}
+	}
+
+	# Idle
+	option = {
+		name = locateit_menu.3.4
+		hidden_effect = {
+			country_event = {
+				id = locateit.204
 			}
 		}
 	}

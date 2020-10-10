@@ -14,7 +14,7 @@ event = {
 
 # Cleaner
 country_event = {
-	id = locateit.100
+	id = locateit.10
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -27,30 +27,33 @@ country_event = {
 
 # Clear all
 country_event = {
-	id = locateit.101
+	id = locateit.11
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		country_event = {
-			id = locateit.100
+			id = locateit.10
 		}
 		country_event = {
-			id = locateit.200
+			id = locateit.20
 		}
 		country_event = {
-			id = locateit.201
+			id = locateit.21
 		}
 		country_event = {
-			id = locateit.202
+			id = locateit.22
 		}
 		country_event = {
-			id = locateit.203
+			id = locateit.23
+		}
+		country_event = {
+			id = locateit.24
 		}
 	}
 }
 
 country_event = {
-	id = locateit.200
+	id = locateit.20
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -62,7 +65,7 @@ country_event = {
 }
 
 country_event = {
-	id = locateit.201
+	id = locateit.21
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -74,7 +77,7 @@ country_event = {
 }
 
 country_event = {
-	id = locateit.202
+	id = locateit.22
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -86,7 +89,7 @@ country_event = {
 }
 
 country_event = {
-	id = locateit.203
+	id = locateit.23
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -97,10 +100,22 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = locateit.24
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_mega_cons_chain }
+			end_event_chain = locateit_mega_cons_chain
+		}
+	}
+}
+
 
 # Violate Motes
 country_event = {
-	id = locateit.2
+	id = locateit.102
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -112,7 +127,7 @@ country_event = {
 
 # Exotic Gases
 country_event = {
-	id = locateit.3
+	id = locateit.103
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -124,7 +139,7 @@ country_event = {
 
 # Rare Crystals
 country_event = {
-	id = locateit.4
+	id = locateit.104
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -136,7 +151,7 @@ country_event = {
 
 # Dark Matter
 country_event = {
-	id = locateit.5
+	id = locateit.105
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -148,7 +163,7 @@ country_event = {
 
 # Living Metal
 country_event = {
-	id = locateit.6
+	id = locateit.106
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -160,7 +175,7 @@ country_event = {
 
 # Zro
 country_event = {
-	id = locateit.7
+	id = locateit.107
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -172,7 +187,7 @@ country_event = {
 
 # Nanites
 country_event = {
-	id = locateit.8
+	id = locateit.108
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -182,9 +197,58 @@ country_event = {
 	}
 }
 
+# Unexploited
+country_event = {
+	id = locateit.109
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_res_chain
+			}
+			end_event_chain = locateit_res_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_res_chain
+			target = root
+		}
+		# Assure that at least one SP can be researched
+		capital_scope = {
+			enable_special_project = {
+				name = locateit_resource_sp_capital
+				location = THIS
+				owner = root
+			}
+		}
+		every_planet_within_border = {
+			limit = {
+				has_research_station = no
+				has_mining_station = no
+				has_any_megastructure = no
+				is_colony = no
+				OR = {
+					has_resource = volatile_motes
+					has_resource = exotic_gases
+					has_resource = rare_crystals
+					has_resource = sr_dark_matter
+					has_resource = sr_zro
+					has_resource = sr_living_metal
+					has_resource = nanites
+				}
+			}
+			enable_special_project = {
+				name = locateit_resource_sp
+				location = THIS
+				owner = root
+			}
+		}
+	}
+}
+
 # Megastructures, not including gates
 country_event = {
-	id = locateit.10
+	id = locateit.200
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -215,7 +279,7 @@ country_event = {
 
 # Gateways
 country_event = {
-	id = locateit.11
+	id = locateit.201
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -243,7 +307,7 @@ country_event = {
 
 # L-Gates
 country_event = {
-	id = locateit.12
+	id = locateit.202
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -271,7 +335,7 @@ country_event = {
 
 # Wormholes
 country_event = {
-	id = locateit.13
+	id = locateit.203
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -292,6 +356,87 @@ country_event = {
 					location = star
 					owner = root
 				}
+			}
+		}
+	}
+}
+
+# Not under construction
+country_event = {
+	id = locateit.204
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_mega_set_chain = {
+			PROJECT_NAME = locateit_mega_cons_sp_capital
+			CHAIN_NAME = locateit_mega_cons_chain
+		}
+		
+		every_owned_megastructure = {
+			limit = {
+				OR = {
+					is_megastructure_type = gateway_0
+					is_megastructure_type = gateway_ruined
+
+					is_megastructure_type = ring_world_1
+					is_megastructure_type = ring_world_2
+					is_megastructure_type = ring_world_2_intermediate
+					is_megastructure_type = ring_world_3_intermediate
+					is_megastructure_type = ring_world_ruined
+
+					is_megastructure_type = dyson_sphere_0
+					is_megastructure_type = dyson_sphere_1
+					is_megastructure_type = dyson_sphere_2
+					is_megastructure_type = dyson_sphere_3
+					is_megastructure_type = dyson_sphere_4
+					is_megastructure_type = dyson_sphere_ruined
+
+					is_megastructure_type = spy_orb_0
+					is_megastructure_type = spy_orb_1
+					is_megastructure_type = spy_orb_2
+					is_megastructure_type = spy_orb_3
+					is_megastructure_type = spy_orb_ruined
+
+					is_megastructure_type = think_tank_0
+					is_megastructure_type = think_tank_1
+					is_megastructure_type = think_tank_2
+					is_megastructure_type = think_tank_ruined
+
+					is_megastructure_type = matter_decompressor_0
+					is_megastructure_type = matter_decompressor_1
+					is_megastructure_type = matter_decompressor_2
+					is_megastructure_type = matter_decompressor_3
+					is_megastructure_type = matter_decompressor_ruined
+
+					is_megastructure_type = strategic_coordination_center_0
+					is_megastructure_type = strategic_coordination_center_1
+					is_megastructure_type = strategic_coordination_center_2
+					is_megastructure_type = strategic_coordination_center_ruined
+					
+					is_megastructure_type = mega_art_installation_0
+					is_megastructure_type = mega_art_installation_1
+					is_megastructure_type = mega_art_installation_2
+					is_megastructure_type = mega_art_installation_3
+					is_megastructure_type = mega_art_installation_ruined
+					is_megastructure_type = mega_art_installation_restored
+
+					is_megastructure_type = interstellar_assembly_0
+					is_megastructure_type = interstellar_assembly_1
+					is_megastructure_type = interstellar_assembly_2
+					is_megastructure_type = interstellar_assembly_3
+					is_megastructure_type = interstellar_assembly_ruined
+
+					is_megastructure_type = mega_shipyard_0
+					is_megastructure_type = mega_shipyard_1
+					is_megastructure_type = mega_shipyard_2
+					is_megastructure_type = mega_shipyard_ruined
+				}
+				is_upgrading = no
+			}
+			enable_special_project = {
+				name = locateit_mega_cons_sp
+				location = star
+				owner = root
 			}
 		}
 

@@ -4,7 +4,7 @@
  loacateit_track_all:0 "“$TRACK_ALL$”以在地图上标示。"
  locateit_research_to_mute:0 "研究以取消显示"
  locateit_res_chain_title:0 "战略资源位置"
- locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。$TRACK_ALL$以在地图上标示。"
+ locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。点击“$TRACK_ALL$”以在地图上标示全部。"
  locateit_mega_chain_title:0 "$megastructures$位置"
  locateit_mega_chain_desc:0 "所有已知$megastructures$的位置（不包括$gateway_final$、$lgate$）。$loacateit_track_all$"
  locateit_gate_chain_title:0 "$gateway_final$位置"
@@ -13,8 +13,11 @@
  locateit_lgate_chain_desc:0 "所有已知$lgate$的位置。$loacateit_track_all$"
  locateit_wormhole_chain_title:0 "$apoc.5.name$位置" # 虫洞
  locateit_wormhole_chain_desc:0 "所有已知$apoc.5.name$的位置。$loacateit_track_all$"
+ locateit_mega_cons_chain_title:0 "所有可升级的$megastructures$的位置"
+ locateit_mega_cons_chain_desc:0 "境内所有可升级的$megastructures$位置。$loacateit_track_all$"
+
  locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
- locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$。防止没有其他可用的研究项。"
+ locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$。这个条目用于防止没有其他可用的研究项。"
  locateit_resource_sp:0 "战略资源点"
  locateit_resource_sp_DESC:0 "一个已知的战略资源点。$locateit_research_to_mute$。"
  locateit_megastructure_sp:0 "$megastructures$"
@@ -33,6 +36,11 @@
  locateit_wormhole_sp_DESC:0 "一个已知的$apoc.5.name$。$locateit_research_to_mute$。"
  locateit_wormhole_sp_captial:0 "$locateit_resource_sp_capital$"
  locateit_wormhole_sp_captial_DESC:0 "$locateit_resource_sp_capital_DESC$"
+ locateit_mega_cons_sp:0 "可升级的$megastructures$"
+ locateit_mega_cons_sp_DESC:0 "我们境内的一个可升级的$megastructures$。$locateit_research_to_mute$。"
+ locateit_mega_cons_sp_captial:0 "$locateit_resource_sp_capital$"
+ locateit_mega_cons_sp_captial_DESC:0 "$locateit_resource_sp_capital_DESC$"
+ 
 
  # Menu
  modmenu_locateit:0 "Locate It!"
@@ -61,6 +69,7 @@
  locateit_menu.2.5.tooltip:0 "$sr_zro_desc$"
  locateit_menu.2.6:0 "£nanites£ $nanites$"
  locateit_menu.2.6.tooltip:0 "$nanites_desc$"
+ locateit_menu.2.7:0 "未开采的战略资源"
 
  locateit_menu.3.name:0 "$megastructures$"
  locateit_menu.3.desc:0 "选择一种$megastructures$来定位"
@@ -72,3 +81,5 @@
 #  locateit_menu.3.2.tooltip:0 "REPLACE_ME"
  locateit_menu.3.3:0 "$apoc.5.name$"
 #  locateit_menu.3.3.tooltip:0 "REPLACE_ME"
+ locateit_menu.3.4:0 "可升级的$megastructures$"
+ 

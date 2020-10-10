@@ -22,3 +22,8 @@ locateit_wormhole_chain = {
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 	picture = GFX_evt_wormhole
 }
+
+locateit_mega_cons_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	picture = GFX_evt_megastructure_construction
+}
