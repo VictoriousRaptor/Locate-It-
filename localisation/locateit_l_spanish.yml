@@ -1,10 +1,10 @@
 ﻿l_spanish:
  
-# Special Projects
+ # Special Projects
  loacateit_track_all:0 ""$TRACK_ALL$" to pin them on map."
  locateit_research_to_mute:0 "Research to hide all"
  locateit_res_chain_title:0 "Locations of Strategic Resource"
- locateit_res_chain_desc:0 "All known locations of this strategic resource. $loacateit_track_all$"
+ locateit_res_chain_desc:0 "All known deposits of this strategic resource. $loacateit_track_all$"
  locateit_mega_chain_title:0 "All known $megastructures$"
  locateit_mega_chain_desc:0 "All known locations of $megastructures$ (not including $gateway_final$ and $lgate_base$). $loacateit_track_all$"
  locateit_gate_chain_title:0 "All known $gateway_final$s"
@@ -19,7 +19,7 @@
  locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
  locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$. Just in case that you can't research any other."
  locateit_resource_sp:0 "Strategic Resource"
- locateit_resource_sp_DESC:0 "A known location of this strategic resource. $locateit_research_to_mute$."
+ locateit_resource_sp_DESC:0 "A known deposit of this strategic resource. $locateit_research_to_mute$."
  locateit_megastructure_sp:0 "$MEGASTRUCTURE$"
  locateit_megastructure_sp_DESC:0 "A known $MEGASTRUCTURE$."
  locateit_megastructure_sp_capital:0 "$locateit_resource_sp_capital$"
