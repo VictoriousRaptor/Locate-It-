@@ -17,7 +17,7 @@
  locateit_mega_cons_chain_desc:0 "All upgradable $megastructures$ within our border."
 
  locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
- locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$. Just in case that you can't research any other."
+ locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute$. It means there's nothing to locate if no other entry exits. Research this hide all in case that you can't research any other."
  locateit_resource_sp:0 "Strategic Resource"
  locateit_resource_sp_DESC:0 "A known deposit of this strategic resource. $locateit_research_to_mute$."
  locateit_megastructure_sp:0 "$MEGASTRUCTURE$"
@@ -81,3 +81,4 @@
  locateit_menu.3.3:0 "$apoc.5.name$s"
 #  locateit_menu.3.3.tooltip:0 "REPLACE_ME"
  locateit_menu.3.4:0 "Upgradable $megastructures$"
+ locateit_menu.3.3.tooltip:0 "Upgradable $megastructures$ that not underconstruction".
