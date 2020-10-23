@@ -52,7 +52,7 @@
  locateit_menu_clr_entry:0 "Clear all markers."
  locateit_menu_clr_entry.tooltip:0 "Clear all existing markers."
  
- locateit_menu.2.name:0 "Strategic Resources""
+ locateit_menu.2.name:0 "Strategic Resources"
  locateit_menu.2.desc:0 "Select a kind of strategic resource and mark it on your map."
  locateit_menu.2.0:0 "£volatile_motes£ $volatile_motes$"
  locateit_menu.2.0.tooltip:0 "$volatile_motes_desc$"
