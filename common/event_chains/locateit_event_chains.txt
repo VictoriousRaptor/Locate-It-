@@ -1,29 +1,29 @@
 locateit_res_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_resource_cache
 }
 
 locateit_mega_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_ringworld
 }
 
 locateit_gate_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_drifting_gateway
 }
 
 locateit_lgate_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_l-gateway
 }
 
 locateit_wormhole_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_wormhole
 }
 
 locateit_mega_cons_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_radar.dds"
 	picture = GFX_evt_megastructure_construction
 }
