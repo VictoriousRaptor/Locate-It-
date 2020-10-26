@@ -1,8 +1,9 @@
 ﻿l_spanish:
  
- # Special Projects
+  # Special Projects
  loacateit_track_all:0 ""$TRACK_ALL$" to pin them on map."
- locateit_research_to_mute:0 "Research to hide all"
+ locateit_research_to_mute_all:0 "Research to hide all"
+ $locateit_research_to_mute_all$
  locateit_res_chain_title:0 "Locations of Strategic Resource"
  locateit_res_chain_desc:0 "All known deposits of this strategic resource. $loacateit_track_all$"
  locateit_mega_chain_title:0 "All known $megastructures$"
@@ -16,8 +17,8 @@
  locateit_mega_cons_chain_title:0 "All upgradable $megastructures$"
  locateit_mega_cons_chain_desc:0 "All upgradable $megastructures$ within our border."
 
- locateit_resource_sp_capital:0 "$locateit_research_to_mute$"
- locateit_resource_sp_capital_DESC:0 "It means there's nothing to locate if no other entry exits. Research this hide all in case that you can't research any other."
+ locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
+ locateit_resource_sp_capital_DESC:0 "It means there's nothing to locate if no other entry exists. Research this to hide all in case that you can't research any other."
  locateit_resource_sp:0 "Strategic Resource"
  locateit_resource_sp_DESC:0 "A known deposit of this strategic resource. $locateit_research_to_mute$."
  locateit_megastructure_sp:0 "$MEGASTRUCTURE$"
@@ -37,7 +38,7 @@
  locateit_wormhole_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_wormhole_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
  locateit_mega_cons_sp:0 "An Upgradable $megastructure$"
- locateit_mega_cons_sp_DESC:0 "An upgradable $MEGASTRUCTURE$ within our border。$locateit_research_to_mute$。"
+ locateit_mega_cons_sp_DESC:0 "An upgradable $MEGASTRUCTURE$ within our border. $locateit_research_to_mute$."
  locateit_mega_cons_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_mega_cons_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
 
