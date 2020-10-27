@@ -7,19 +7,13 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfrom = {
-			country_event = {
-				id = locateit.10
-			}
-		}
+		# fromfrom = {
+		# 	country_event = {
+		# 		id = locateit.10
+		# 	}
+		# }
 	}
-	on_fail = {
-		fromfrom = {
-			country_event = {
-				id = locateit.10
-			}
-		}
-	}
+
 }
 
 special_project = {
@@ -38,11 +32,6 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfrom = {
-			country_event = {
-				id = locateit.10
-			}
-		}
 	}
 }
 
@@ -55,18 +44,13 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfromfrom = {
-			country_event = {
-				id = locateit.20
-			}
-		}
+		# fromfromfrom = {
+		# 	country_event = {
+		# 		id = locateit.20
+		# 	}
+		# }
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.20
-			}
-		}
 	}
 }
 
@@ -86,11 +70,6 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.20
-			}
-		}
 	}
 }
 
@@ -103,18 +82,13 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfromfrom = {
-			country_event = {
-				id = locateit.21
-			}
-		}
+		# fromfromfrom = {
+		# 	country_event = {
+		# 		id = locateit.21
+		# 	}
+		# }
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.21
-			}
-		}
 	}
 }
 
@@ -134,11 +108,6 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.21
-			}
-		}
 	}
 }
 
@@ -151,18 +120,13 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfromfrom = {
-			country_event = {
-				id = locateit.22
-			}
-		}
+		# fromfromfrom = {
+		# 	country_event = {
+		# 		id = locateit.22
+		# 	}
+		# }
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.22
-			}
-		}
 	}
 }
 
@@ -182,11 +146,6 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.22
-			}
-		}
 	}
 }
 
@@ -199,18 +158,14 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfromfrom = {
-			country_event = {
-				id = locateit.23
-			}
-		}
+		# fromfromfrom = {
+		# 	country_event = {
+		# 		id = locateit.23
+		# 	}
+		# }
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.23
-			}
-		}
+
 	}
 }
 
@@ -230,11 +185,6 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.23
-			}
-		}
 	}
 }
 
@@ -247,18 +197,13 @@ special_project = {
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
-		fromfromfrom = {
-			country_event = {
-				id = locateit.24
-			}
-		}
+		# fromfromfrom = {
+		# 	country_event = {
+		# 		id = locateit.24
+		# 	}
+		# }
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.24
-			}
-		}
 	}
 }
 
@@ -278,10 +223,5 @@ special_project = {
 		}
 	}
 	on_fail = {
-		fromfromfrom = {
-			country_event = {
-				id = locateit.24
-			}
-		}
 	}
 }
