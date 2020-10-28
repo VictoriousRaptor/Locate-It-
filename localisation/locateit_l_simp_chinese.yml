@@ -18,10 +18,11 @@
  locateit_mega_cons_chain_title:0 "所有可升级的$megastructures$的位置"
  locateit_mega_cons_chain_desc:0 "境内所有可升级的$megastructures$位置。$loacateit_track_all$"
 
- locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
- locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute_all$。如果只有这个条目，那么表示没有符合定位要求的对象。"
+ locateit_resource_poi:0 "战略资源兴趣点"
  locateit_resource_sp:0 "战略资源点"
  locateit_resource_sp_DESC:0 "一个已知的战略资源点。$locateit_research_to_mute$。"
+ locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
+ locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute_all$。如果只有这个条目，那么表示没有符合定位要求的对象。"
  locateit_megastructure_sp:0 "$megastructures$"
  locateit_megastructure_sp_DESC:0 "一个已知的$megastructures$。"
  locateit_megastructure_sp_capital:0 "$locateit_resource_sp_capital$"
