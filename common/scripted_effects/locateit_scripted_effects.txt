@@ -23,7 +23,7 @@ locateit_find_resource = {
 			owner = root
 		}
 	}
-	every_planet = {
+	every_galaxy_planet = {
 		limit = {
 			has_resource = $RESOURCE$
 			# Must be surveyed or controlled by other empires
