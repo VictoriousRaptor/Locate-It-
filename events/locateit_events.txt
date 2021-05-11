@@ -289,6 +289,67 @@ country_event = {
 	}
 }
 
+# All
+country_event = {
+	id = locateit.110
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				has_event_chain = locateit_res_chain
+			}
+			end_event_chain = locateit_res_chain
+		}
+		begin_event_chain = {
+			event_chain = locateit_res_chain
+			target = root
+		}
+		capital_scope = {
+			enable_special_project = {
+				name = locateit_resource_sp_capital
+				location = THIS
+				owner = root
+			}
+		}
+		every_galaxy_planet = {
+			limit = {
+				OR = {
+					AND = {
+						has_resource = volatile_motes
+					}
+					AND = {
+						has_resource = exotic_gases
+					}
+					AND = {
+						has_resource = rare_crystals
+					}
+					AND = {
+						has_resource = sr_dark_matter
+					}
+					AND = {
+						has_resource = sr_zro
+					}
+					AND = {
+						has_resource = sr_living_metal
+					}
+					has_resource = nanites
+				}
+				# Must be surveyed
+				is_surveyed = {
+					who = root
+					status = yes
+				}
+			}
+			enable_special_project = {
+				name = locateit_resource_sp
+				location = THIS
+				owner = root
+			}
+		}
+	}
+}
+
 # Megastructures, not including gates
 country_event = {
 	id = locateit.200
