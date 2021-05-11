@@ -4,6 +4,9 @@ is_gate = {
 		is_megastructure_type = gateway_final
 		is_megastructure_type = gateway_restored
 		is_megastructure_type = gateway_ruined
+		# For Gateway Policy Federation mod
+		is_megastructure_type = gatewayBuild_gateway_replaced
+		is_megastructure_type = gatewayBuild_gateway_new
 	}
 }
 

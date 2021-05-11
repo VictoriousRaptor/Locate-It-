@@ -2,10 +2,10 @@
  
  # Special Projects
  loacateit_track_all:0 "点击“$TRACK_ALL$”以在地图上标示。"
- locateit_research_to_mute_all:0 "研究以取消显示所有条目"
- locateit_research_to_mute:0 "研究以在银河地图上隐藏这一条目"
+ locateit_research_to_mute_all:0 "研究以隐藏所有条目"
+ locateit_research_to_mute:0 "研究以在银河地图上停止高亮这一条目"
  locateit_res_chain_title:0 "战略资源位置"
- locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。点击“$TRACK_ALL$”以在地图上标示全部。"
+ locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。点击“$TRACK_ALL$”以在地图上高亮全部。"
 #   locateit_res_chain_desc:0 "所有已知[Prev.sr_name]战略资源的位置。点击“$TRACK_ALL$”以在地图上标示全部。$[Prev.sr_name]$ "
  locateit_mega_chain_title:0 "$megastructures$位置"
  locateit_mega_chain_desc:0 "所有已知$megastructures$的位置（不包括$gateway_final$、$lgate$）。$loacateit_track_all$"
@@ -18,10 +18,11 @@
  locateit_mega_cons_chain_title:0 "所有可升级的$megastructures$的位置"
  locateit_mega_cons_chain_desc:0 "境内所有可升级的$megastructures$位置。$loacateit_track_all$"
 
- locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
- locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute_all$。如果只有这个条目，那么表示没有符合定位要求的对象。"
+ locateit_resource_poi:0 "战略资源兴趣点"
  locateit_resource_sp:0 "战略资源点"
  locateit_resource_sp_DESC:0 "一个已知的战略资源点。$locateit_research_to_mute$。"
+ locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
+ locateit_resource_sp_capital_DESC:0 "$locateit_research_to_mute_all$。如果只有这个条目，那么表示没有符合定位要求的对象。"
  locateit_megastructure_sp:0 "$megastructures$"
  locateit_megastructure_sp_DESC:0 "一个已知的$megastructures$。"
  locateit_megastructure_sp_capital:0 "$locateit_resource_sp_capital$"
@@ -38,7 +39,7 @@
  locateit_wormhole_sp_DESC:0 "一个已知的$apoc.5.name$。$locateit_research_to_mute$。"
  locateit_wormhole_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_wormhole_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
- locateit_mega_cons_sp:0 "可升级的$megastructures$"
+ locateit_mega_cons_sp:0 "境内可升级的$megastructures$"
  locateit_mega_cons_sp_DESC:0 "我们境内的一个可升级的$megastructures$。$locateit_research_to_mute$。"
  locateit_mega_cons_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_mega_cons_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
@@ -56,7 +57,7 @@
  locateit_menu_clr_entry.tooltip:0 "清除所有定位"
 
  locateit_menu.2.name:0 "战略资源""
- locateit_menu.2.desc:0 "选择一种战略资源来定位"
+ locateit_menu.2.desc:0 "选择一种战略资源来定位。注意只能定位已知位置的战略资源。"
  locateit_menu.2.0:0 "£volatile_motes£ $volatile_motes$"
  locateit_menu.2.0.tooltip:0 "$volatile_motes_desc$"
  locateit_menu.2.1:0 "£exotic_gases£ $exotic_gases$"
@@ -71,7 +72,9 @@
  locateit_menu.2.5.tooltip:0 "$sr_zro_desc$"
  locateit_menu.2.6:0 "£nanites£ $nanites$"
  locateit_menu.2.6.tooltip:0 "$nanites_desc$"
- locateit_menu.2.7:0 "未开采的战略资源"
+ locateit_menu.2.7:0 "境内未开采的战略资源"
+ locateit_menu.2.7.tooltip:0 "境内已掌握相关科技，但未开采的战略资源"
+ locateit_menu.2.8:0 "所有已知位置的战略资源"
 
  locateit_menu.3.name:0 "$megastructures$"
  locateit_menu.3.desc:0 "选择一种$megastructures$来定位"
@@ -83,5 +86,5 @@
 #  locateit_menu.3.2.tooltip:0 "REPLACE_ME"
  locateit_menu.3.3:0 "$apoc.5.name$"
 #  locateit_menu.3.3.tooltip:0 "REPLACE_ME"
- locateit_menu.3.4:0 "可升级的$megastructures$"
+ locateit_menu.3.4:0 "境内可升级的$megastructures$"
  

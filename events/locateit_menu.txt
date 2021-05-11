@@ -139,10 +139,21 @@ country_event = {
 	# Unexploited
 	option = {
 		name = locateit_menu.2.7
-		# custom_tooltip = locateit_menu.2.7.tooltip
+		custom_tooltip = locateit_menu.2.7.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.109
+			}
+		}
+	}
+
+	# All
+	option = {
+		name = locateit_menu.2.8
+		# custom_tooltip = locateit_menu.2.8.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.110
 			}
 		}
 	}

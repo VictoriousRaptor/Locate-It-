@@ -26,7 +26,7 @@ locateit_find_resource = {
 	every_galaxy_planet = {
 		limit = {
 			has_resource = $RESOURCE$
-			# Must be surveyed or controlled by other empires
+			# Must be surveyed
 			is_surveyed = {
 				who = root
 				status = yes
