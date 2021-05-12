@@ -82,6 +82,7 @@ country_event = {
 	}
 }
 
+# All megastructures (not including gates and L-gates)
 country_event = {
 	id = locateit.20
 	hide_window = yes
@@ -94,6 +95,7 @@ country_event = {
 	}
 }
 
+# Gates
 country_event = {
 	id = locateit.21
 	hide_window = yes
@@ -106,6 +108,7 @@ country_event = {
 	}
 }
 
+# L-gates
 country_event = {
 	id = locateit.22
 	hide_window = yes
@@ -118,6 +121,7 @@ country_event = {
 	}
 }
 
+# Wormholes
 country_event = {
 	id = locateit.23
 	hide_window = yes
@@ -130,6 +134,7 @@ country_event = {
 	}
 }
 
+# Under construction or upgradable
 country_event = {
 	id = locateit.24
 	hide_window = yes
@@ -246,7 +251,7 @@ country_event = {
 		# Assure that at least one SP can be researched
 		capital_scope = {
 			enable_special_project = {
-				name = locateit_resource_sp_capital
+				name = locateit_resource_sp_hide
 				location = THIS
 				owner = root
 			}
@@ -324,7 +329,7 @@ country_event = {
 		}
 		capital_scope = {
 			enable_special_project = {
-				name = locateit_resource_sp_capital
+				name = locateit_resource_sp_hide
 				location = THIS
 				owner = root
 			}
@@ -374,7 +379,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_megastructure_sp_capital
+			PROJECT_NAME = locateit_megastructure_sp_hide
 			CHAIN_NAME = locateit_mega_chain
 		}
 		every_megastructure = {
@@ -405,7 +410,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_gate_sp_capital
+			PROJECT_NAME = locateit_gate_sp_hide
 			CHAIN_NAME = locateit_gate_chain
 		}
 		every_megastructure = {
@@ -433,7 +438,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_lgate_sp_capital
+			PROJECT_NAME = locateit_lgate_sp_hide
 			CHAIN_NAME = locateit_lgate_chain
 		}
 		every_megastructure = {
@@ -461,7 +466,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_wormhole_sp_capital
+			PROJECT_NAME = locateit_wormhole_sp_hide
 			CHAIN_NAME = locateit_wormhole_chain
 		}
 		every_system = {
@@ -489,7 +494,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_mega_set_chain = {
-			PROJECT_NAME = locateit_mega_cons_sp_capital
+			PROJECT_NAME = locateit_mega_cons_sp_hide
 			CHAIN_NAME = locateit_mega_cons_chain
 		}
 		
