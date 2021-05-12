@@ -17,7 +17,7 @@ locateit_find_resource = {
 	# log = "sr_name: [This.sr_name.GetName]"
 	# Assure that at least one SP can be researched
 	enable_special_project = {
-		name = locateit_resource_sp_hide
+		name = locateit_resource_sp_capital
 		owner = root
 	}
 	every_galaxy_planet = {
