@@ -6,24 +6,20 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	on_success = { 
-		# fromfrom = {
-		# 	country_event = {
-		# 		id = locateit.10
-		# 	}
-		# }
-	}
-
+	on_success = {}
+	on_fail = {}
 }
 
 special_project = {
 	key = "locateit_resource_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_res_chain
 	picture = GFX_evt_glitchy_matrix
+	location = no
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
+	location = no
 	on_success = { 
 		fromfrom = {
 			country_event = {
@@ -31,8 +27,7 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }
 
 special_project = {
@@ -43,23 +38,17 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	on_success = { 
-		# fromfromfrom = {
-		# 	country_event = {
-		# 		id = locateit.20
-		# 	}
-		# }
-	}
-	on_fail = {
-	}
+	on_success = {}
+	on_fail = {}
 }
 
 special_project = {
 	key = "locateit_megastructure_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_mega_chain
 	picture = GFX_evt_glitchy_matrix
 	cost = 0
+	location = no
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
@@ -69,8 +58,7 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }
 
 special_project = {
@@ -81,23 +69,17 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	on_success = { 
-		# fromfromfrom = {
-		# 	country_event = {
-		# 		id = locateit.21
-		# 	}
-		# }
-	}
-	on_fail = {
-	}
+	on_success = {}
+	on_fail = {}
 }
 
 special_project = {
 	key = "locateit_gate_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_gate_chain
 	picture = GFX_evt_glitchy_matrix
 	cost = 0
+	location = no
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
@@ -107,8 +89,7 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }
 
 special_project = {
@@ -119,23 +100,17 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	on_success = { 
-		# fromfromfrom = {
-		# 	country_event = {
-		# 		id = locateit.22
-		# 	}
-		# }
-	}
-	on_fail = {
-	}
+	on_success = {}
+	on_fail = {}
 }
 
 special_project = {
 	key = "locateit_lgate_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_lgate_chain
 	picture = GFX_evt_glitchy_matrix
 	cost = 0
+	location = no
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
@@ -145,8 +120,7 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }
 
 special_project = {
@@ -171,10 +145,11 @@ special_project = {
 
 special_project = {
 	key = "locateit_wormhole_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_wormhole_chain
 	picture = GFX_evt_glitchy_matrix
 	cost = 0
+	location = no
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
@@ -184,8 +159,7 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }
 
 special_project = {
@@ -196,23 +170,17 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	on_success = { 
-		# fromfromfrom = {
-		# 	country_event = {
-		# 		id = locateit.24
-		# 	}
-		# }
-	}
-	on_fail = {
-	}
+	on_success = {}
+	on_fail = {}
 }
 
 special_project = {
 	key = "locateit_mega_cons_sp_capital"
-	event_scope = planet_event
+	event_scope = country_event
 	event_chain = locateit_mega_cons_chain
 	picture = GFX_evt_glitchy_matrix
 	cost = 0
+	location = no
 	days_to_research = 1
 	timelimit = -1
 	on_success = { 
@@ -222,6 +190,5 @@ special_project = {
 			}
 		}
 	}
-	on_fail = {
-	}
+	on_fail = {}
 }

@@ -82,6 +82,7 @@ country_event = {
 	}
 }
 
+# All megastructures (not including gates and L-gates)
 country_event = {
 	id = locateit.20
 	hide_window = yes
@@ -94,6 +95,7 @@ country_event = {
 	}
 }
 
+# Gates
 country_event = {
 	id = locateit.21
 	hide_window = yes
@@ -106,6 +108,7 @@ country_event = {
 	}
 }
 
+# L-gates
 country_event = {
 	id = locateit.22
 	hide_window = yes
@@ -118,6 +121,7 @@ country_event = {
 	}
 }
 
+# Wormholes
 country_event = {
 	id = locateit.23
 	hide_window = yes
@@ -130,6 +134,7 @@ country_event = {
 	}
 }
 
+# Under construction or upgradable
 country_event = {
 	id = locateit.24
 	hide_window = yes
@@ -244,12 +249,9 @@ country_event = {
 			target = root
 		}
 		# Assure that at least one SP can be researched
-		capital_scope = {
-			enable_special_project = {
-				name = locateit_resource_sp_capital
-				location = THIS
-				owner = root
-			}
+		enable_special_project = {
+			name = locateit_resource_sp_capital
+			owner = root
 		}
 		every_planet_within_border = {
 			limit = {
@@ -322,34 +324,19 @@ country_event = {
 			event_chain = locateit_res_chain
 			target = root
 		}
-		capital_scope = {
-			enable_special_project = {
-				name = locateit_resource_sp_capital
-				location = THIS
-				owner = root
-			}
+		enable_special_project = {
+			name = locateit_resource_sp_capital
+			owner = root
 		}
 		every_galaxy_planet = {
 			limit = {
 				OR = {
-					AND = {
-						has_resource = volatile_motes
-					}
-					AND = {
-						has_resource = exotic_gases
-					}
-					AND = {
-						has_resource = rare_crystals
-					}
-					AND = {
-						has_resource = sr_dark_matter
-					}
-					AND = {
-						has_resource = sr_zro
-					}
-					AND = {
-						has_resource = sr_living_metal
-					}
+					has_resource = volatile_motes
+					has_resource = exotic_gases
+					has_resource = rare_crystals
+					has_resource = sr_dark_matter
+					has_resource = sr_zro
+					has_resource = sr_living_metal
 					has_resource = nanites
 				}
 				# Must be surveyed
@@ -492,7 +479,6 @@ country_event = {
 			PROJECT_NAME = locateit_mega_cons_sp_capital
 			CHAIN_NAME = locateit_mega_cons_chain
 		}
-		
 		every_owned_megastructure = {
 			limit = {
 				is_upgradable_megastructure = yes

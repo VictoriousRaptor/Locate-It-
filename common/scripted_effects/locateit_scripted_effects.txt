@@ -16,12 +16,9 @@ locateit_find_resource = {
 	# log = "sr_name: [This.sr_name]"
 	# log = "sr_name: [This.sr_name.GetName]"
 	# Assure that at least one SP can be researched
-	capital_scope = {
-		enable_special_project = {
-			name = locateit_resource_sp_capital
-			location = THIS
-			owner = root
-		}
+	enable_special_project = {
+		name = locateit_resource_sp_capital
+		owner = root
 	}
 	every_galaxy_planet = {
 		limit = {
@@ -51,11 +48,8 @@ locateit_mega_set_chain = {
 		event_chain = $CHAIN_NAME$
 		target = root
 	}
-	capital_scope = {
-		enable_special_project = {
-			name = $PROJECT_NAME$
-			location = THIS
-			owner = root
-		}
+	enable_special_project = {
+		name = $PROJECT_NAME$
+		owner = root
 	}
 }
