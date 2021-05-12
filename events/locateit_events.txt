@@ -12,18 +12,35 @@ event = {
 	}
 }
 
-# event = {
-# 	id = locateit.1
-# 	hide_window = yes
-# 	is_triggered_only = yes
-# 	fire_only_once = yes
-# 	immediate = {
-# 		if = {
-# 			limit = { NOT = { has_global_flag = locateit_activated } }
-# 			set_global_flag = locateit_activated
-# 		}
-# 	}
-# }
+# Dynamic Mod Menu support
+event = {
+	id = locateit.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		dmm_register_mod = {
+			DMM_NAME = locateit_menu.1.name
+			DMM_FLAG = locateit_dmm
+		}
+	}
+}
+
+# Open menu in DMM
+country_event = {
+	id = locateit.2
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		from = {
+			has_leader_flag = locateit_dmm
+		}
+	}
+	immediate = {
+		country_event = {
+			id = locateit_menu.1
+		}
+	}
+}
 
 # Cleaner
 country_event = {
@@ -487,6 +504,5 @@ country_event = {
 				owner = root
 			}
 		}
-
 	}
 }

@@ -1,11 +1,19 @@
 on_game_start = {
 	events = {
 		locateit.0
+		locateit.1
 	}
 }
 
-on_monthly_pulse = {
+on_single_player_save_game_load = {
 	events = {
 		locateit.0
+		locateit.1
+	}
+}
+
+dmm_mod_selected = {
+	events = {
+		locateit.2
 	}
 }
