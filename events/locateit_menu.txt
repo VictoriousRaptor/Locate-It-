@@ -1,5 +1,6 @@
 namespace = locateit_menu
 
+# Tier 1
 country_event = {
 	id = locateit_menu.1
 	title = "locateit_menu.1.name"
@@ -29,6 +30,28 @@ country_event = {
 		}
 	}
 
+	# Guardians
+	option = {
+		name = locateit_menu_guardians_entry
+		# custom_tooltip = locateit_menu_guardians_entry.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.301
+			}
+		}
+	}
+
+	# Enclaves
+	option = {
+		name = locateit_menu_enclaves_entry
+		# custom_tooltip = locateit_menu_enclaves_entry.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.300
+			}
+		}
+	}
+
 	# Debug
 	option = {
 		name = locateit_menu_clr_entry
@@ -40,17 +63,25 @@ country_event = {
 		}
 	}
 
+
 	option = {
+		trigger = {
+			has_global_flag = modmenu_installed
+		}
 		name = modmenu_exit
-		hidden_effect = {
-			if = {
-				limit = { NOT = { has_global_flag = locateit_activated } }
-				set_global_flag = locateit_activated
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_global_flag = modmenu_installed
 			}
 		}
+		name = locateit_menu_exit
 	}
 }
 
+# Tier 2
 # Strategic Resources
 country_event = {
 	id = locateit_menu.2
@@ -160,18 +191,47 @@ country_event = {
 
 	option = {
 		name = modmenu_return
-		custom_tooltip = modmenu_return
+		trigger = {
+			has_global_flag = modmenu_installed
+		}
 		hidden_effect = {
 			country_event = {
 				id = locateit_menu.1
 			}
 		}
 	}
+
 	option = {
+		name = locateit_menu_return
+		trigger = {
+			NOT = { has_global_flag = modmenu_installed }
+		}
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.1
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = modmenu_installed
+		}
 		name = modmenu_exit
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_global_flag = modmenu_installed
+			}
+		}
+		name = locateit_menu_exit
 	}
 }
 
+# Tier 2
+# Megastructures
 country_event = {
 	id = locateit_menu.3
 	title = "locateit_menu.3.name"
@@ -235,7 +295,9 @@ country_event = {
 
 	option = {
 		name = modmenu_return
-		# custom_tooltip = modmenu_return
+		trigger = {
+			has_global_flag = modmenu_installed
+		}
 		hidden_effect = {
 			country_event = {
 				id = locateit_menu.1
@@ -244,6 +306,32 @@ country_event = {
 	}
 
 	option = {
+		name = locateit_menu_return
+		trigger = {
+			NOT = {
+				has_global_flag = modmenu_installed
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = locateit_menu.1
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = modmenu_installed
+		}
 		name = modmenu_exit
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				has_global_flag = modmenu_installed
+			}
+		}
+		name = locateit_menu_exit
 	}
 }
