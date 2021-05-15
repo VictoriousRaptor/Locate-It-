@@ -19,7 +19,6 @@ special_project = {
 	cost = 0
 	days_to_research = 1
 	timelimit = -1
-	location = no
 	on_success = { 
 		fromfrom = {
 			country_event = {
@@ -187,6 +186,68 @@ special_project = {
 		fromfromfrom = {
 			country_event = {
 				id = locateit.24
+			}
+		}
+	}
+	on_fail = {}
+}
+
+special_project = {
+	key = "locateit_enclaves_sp"
+	event_scope = planet_event
+	event_chain = locateit_enclaves_chain
+	picture = GFX_evt_space_station
+	cost = 0
+	days_to_research = 1
+	timelimit = -1
+	on_success = {}
+	on_fail = {}
+}
+
+special_project = {
+	key = "locateit_enclaves_sp_mute"
+	event_scope = country_event
+	event_chain = locateit_enclaves_chain
+	picture = GFX_evt_gas_giant_station
+	cost = 0
+	location = no
+	days_to_research = 1
+	timelimit = -1
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.31
+			}
+		}
+	}
+	on_fail = {}
+}
+
+special_project = {
+	key = "locateit_guardians_sp"
+	event_scope = planet_event
+	event_chain = locateit_guardians_chain
+	picture = GFX_evt_space_dragon
+	cost = 0
+	days_to_research = 1
+	timelimit = -1
+	on_success = {}
+	on_fail = {}
+}
+
+special_project = {
+	key = "locateit_guardians_sp_mute"
+	event_scope = country_event
+	event_chain = locateit_guardians_chain
+	picture = GFX_evt_dimensional_horror
+	cost = 0
+	location = no
+	days_to_research = 1
+	timelimit = -1
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.32
 			}
 		}
 	}
