@@ -402,7 +402,7 @@ country_event = {
 					is_gate = yes
 					is_megastructure_type = lgate_base
 				}
-				locateit_in_valid_system = yes
+				locateit_in_surveyed_system = yes
 			}
 			enable_special_project = {
 				name = locateit_megastructure_sp
@@ -426,7 +426,7 @@ country_event = {
 		every_megastructure = {
 			limit = {
 				is_gate = yes
-				locateit_in_valid_system = yes
+				locateit_in_surveyed_system = yes
 			}
 			enable_special_project = {
 				name = locateit_gate_sp
@@ -450,7 +450,7 @@ country_event = {
 		every_megastructure = {
 			limit = {
 				is_megastructure_type = lgate_base
-				locateit_in_valid_system = yes
+				locateit_in_surveyed_system = yes
 			}
 			enable_special_project = {
 				name = locateit_lgate_sp
@@ -474,7 +474,7 @@ country_event = {
 		every_system = {
 			limit = {
 				has_natural_wormhole = yes
-				locateit_in_valid_system = yes
+				locateit_in_surveyed_system = yes
 			}
 			enable_special_project = {
 				name = locateit_wormhole_sp
@@ -522,9 +522,15 @@ country_event = {
 		every_system = {
 			limit = {
 				has_star_flag = enclave
-				locateit_in_valid_system = yes
+				any_fleet_in_system = {
+					exists = owner
+					owner = {
+						is_country_type = enclave
+						has_communications = root
+					}
+				}
+				locateit_in_surveyed_system = yes
 			}
-			# TODO differ 
 			enable_special_project = {
 				name = locateit_enclaves_sp
 				location = star
@@ -545,20 +551,42 @@ country_event = {
 			CHAIN_NAME = locateit_guardians_chain
 		}
 		every_system = {
+			#leviathans_events.txt 6350 6260
 			limit = {
 				OR = {
-					has_star_flag = guardians_dragon_system
 					has_star_flag = guardians_horror_system
 					has_star_flag = guardians_dreadnought_system
 					has_star_flag = guardians_hive_system
 					has_star_flag = guardians_technosphere_system
 					has_star_flag = guardians_fortress_system
 					has_star_flag = guardians_stellarite_system		
-					# has_star_flag = hostile_system
 					has_star_flag = scavenger_bot_system
 					has_star_flag = guardians_hatchling_system
+					has_star_flag = elderly_tiyanki_system
+					has_star_flag = guardians_dragon_system
 				}
-				locateit_in_valid_system = yes
+				any_fleet_in_system = {
+					exists = owner
+					owner = {
+						is_guardian_country = yes
+						NOT = { is_country_type = guardian }
+						OR = {
+							is_country_type = guardian_dragon
+							is_country_type = guardian_fortress
+							is_country_type = guardian_stellarite
+							is_country_type = guardian_horror
+							is_country_type = guardian_hiver
+							is_country_type = guardian_sphere
+							is_country_type = guardian_dreadnought
+							# is_country_type = guardian_wraith
+							is_country_type = guardian_hatchling
+							is_country_type = guardian_scavenger_bot
+							is_country_type = guardian_elderly_tiyanki
+						}
+						has_communications = root
+					}
+				}
+				locateit_in_surveyed_system = yes
 			}
 			enable_special_project = {
 				name = locateit_guardians_sp

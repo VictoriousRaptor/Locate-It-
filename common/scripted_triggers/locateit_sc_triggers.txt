@@ -10,7 +10,7 @@ is_gate = {
 	}
 }
 
-locateit_in_valid_system = {
+locateit_in_surveyed_system = {
 	OR = {
 		star = {
 			solar_system = {
