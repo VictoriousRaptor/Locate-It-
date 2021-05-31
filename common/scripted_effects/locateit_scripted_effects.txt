@@ -9,12 +9,6 @@ locateit_find_resource = {
 		event_chain = locateit_res_chain
 		target = root
 	}
-	# set_variable = {
-	# 	which = sr_name
-	# 	value = $RESOURCE$
-	# }
-	# log = "sr_name: [This.sr_name]"
-	# log = "sr_name: [This.sr_name.GetName]"
 	# Assure that at least one SP can be researched
 	enable_special_project = {
 		name = locateit_resource_sp_capital

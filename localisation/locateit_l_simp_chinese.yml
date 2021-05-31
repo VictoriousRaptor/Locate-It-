@@ -6,7 +6,6 @@
  locateit_research_to_mute:0 "研究以在银河地图上停止高亮这一条目"
  locateit_res_chain_title:0 "战略资源位置"
  locateit_res_chain_desc:0 "所有已知该种类战略资源的位置。点击“$TRACK_ALL$”以在地图上高亮全部。"
-#   locateit_res_chain_desc:0 "所有已知[Prev.sr_name]战略资源的位置。点击“$TRACK_ALL$”以在地图上标示全部。$[Prev.sr_name]$ "
  locateit_mega_chain_title:0 "$megastructures$位置"
  locateit_mega_chain_desc:0 "所有已知$megastructures$的位置（不包括$gateway_final$、$lgate$）。$loacateit_track_all$"
  locateit_gate_chain_title:0 "$gateway_final$位置"
