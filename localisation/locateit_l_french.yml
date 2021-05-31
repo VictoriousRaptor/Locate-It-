@@ -70,7 +70,7 @@
  locateit_menu.2.6:0 "£nanites£ $nanites$"
  locateit_menu.2.6.tooltip:0 "$nanites_desc$"
  locateit_menu.2.7:0 "Unexploited strategic resources within border."
- locateit_menu.2.7.tooltip:0 "These are deposits that you have the required technology but forget to exploit."
+ locateit_menu.2.7.tooltip:0 "These are deposits that you have the required technology but yet to exploit."
  locateit_menu.2.8:0 "All kinds of strategic resources."
 
  locateit_menu.3.name:0 "$megastructures$"
