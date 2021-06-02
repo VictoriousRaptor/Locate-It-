@@ -17,8 +17,8 @@
  locateit_mega_cons_chain_title:0 "All upgradable $megastructures$"
  locateit_mega_cons_chain_desc:0 "All upgradable $megastructures$ within our border."
 
- locateit_resource_sp:0 "Strategic Resource"
- locateit_resource_sp_DESC:0 "A known deposit of this strategic resource. ."
+ locateit_resource_sp:0 "Strategic Resource Deposit"
+ locateit_resource_sp_DESC:0 "A known deposit of this strategic resource."
  locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
  locateit_resource_sp_capital_DESC:0 "Research this special project to hide all entries. It means nothing matches the given condition if there's no other entries."
  locateit_megastructure_sp:0 "$MEGASTRUCTURE$"

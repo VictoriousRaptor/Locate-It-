@@ -166,7 +166,7 @@ country_event = {
 	}
 }
 
-# Encalves
+# Enclaves
 country_event = {
 	id = locateit.32
 	hide_window = yes
