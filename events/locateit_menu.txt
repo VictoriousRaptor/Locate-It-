@@ -33,7 +33,7 @@ country_event = {
 	# Guardians
 	option = {
 		name = locateit_menu_guardians_entry
-		# custom_tooltip = locateit_menu_guardians_entry.tooltip
+		custom_tooltip = locateit_menu_guardians_entry.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.301
@@ -44,7 +44,7 @@ country_event = {
 	# Enclaves
 	option = {
 		name = locateit_menu_enclaves_entry
-		# custom_tooltip = locateit_menu_enclaves_entry.tooltip
+		custom_tooltip = locateit_menu_enclaves_entry.tooltip
 		hidden_effect = {
 			country_event = {
 				id = locateit.300
