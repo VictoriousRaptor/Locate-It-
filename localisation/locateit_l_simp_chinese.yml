@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  
- # Special Projects
+ # Event chains
  loacateit_track_all:0 "点击“$TRACK_ALL$”以在地图上标示。"
  locateit_research_to_mute_all:0 "研究以隐藏所有条目"
  locateit_research_to_mute:0 "研究以在银河地图上停止高亮这一条目"
@@ -16,7 +16,14 @@
  locateit_wormhole_chain_desc:0 "所有已知$apoc.5.name$的位置。$loacateit_track_all$"
  locateit_mega_cons_chain_title:0 "所有可升级的$megastructures$的位置"
  locateit_mega_cons_chain_desc:0 "境内所有可升级的$megastructures$位置。$loacateit_track_all$"
+ locateit_enclaves_chain_title:0 "城邦空间站位置"
+ locateit_enclaves_chain_desc:0 "所有已知城邦空间站的位置。"
+ locateit_guardians_chain_title:0 "利维坦位置"
+ locateit_guardians_chain_desc:0 "所有已知利维坦的位置。"
+ locateit_crime_chain_title:0 "罪企分部"
+ locateit_crime_chain_desc:0 "境内所有罪企分部的位置。"
 
+ # Special projects
  locateit_resource_poi:0 "战略资源兴趣点"
  locateit_resource_sp:0 "战略资源点"
  locateit_resource_sp_DESC:0 "一个已知的战略资源点。"
@@ -42,6 +49,18 @@
  locateit_mega_cons_sp_DESC:0 "我们境内的一个可升级的$megastructures$。"
  locateit_mega_cons_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_mega_cons_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
+ locateit_enclaves_sp:0 "一个已知的城邦空间站"
+ locateit_enclaves_sp_DESC:0 "一个已知的城邦空间站。"
+ locateit_enclaves_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_enclaves_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
+ locateit_guardians_sp:0 "一个已知的利维坦"
+ locateit_guardians_sp_DESC:0 "一个已知的利维坦。"
+ locateit_guardians_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_guardians_sp_mute_DESC:0 "$locateit_resource_sp_capital_DESC$"
+ locateit_crime_sp:0 "一个罪企分部"
+ locateit_crime_sp_DESC:0 "境内一个罪企分部"
+ locateit_crime_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_crime_sp_mute_DESC:0 "$locateit_resource_sp_capital_DESC$"
  
 
  # Menu
@@ -49,15 +68,17 @@
  locateit_menu.1.name:0 "战略资源与巨构定位器"
  locateit_menu.1.desc:0 "请选择你要定位的目标："
  locateit_menu_sr_entry:0 "战略资源"
- locateit_menu_sr_entry.tooltip:0 "选择一种战略资源在地图上定位"
+ locateit_menu_sr_entry.tooltip:0 "选择一种战略资源，在地图上定位其矿藏"
  locateit_menu_mega_entry:0 "$megastructures$"
- locateit_menu_mega_entry.tooltip:0 "选择$megastructures$在地图上定位"
- locateit_menu_clr_entry:0 "清除所有定位"
- locateit_menu_clr_entry.tooltip:0 "清除所有定位"
+ locateit_menu_mega_entry.tooltip:0 "在地图上定位$megastructures$"
+ locateit_menu_clr_entry:0 "清除所有标记"
+ locateit_menu_clr_entry.tooltip:0 "清除所有标记"
  locateit_menu_guardians_entry:0 "利维坦"
  locateit_menu_guardians_entry.tooltip:0 "标记所有已知的利维坦"
  locateit_menu_enclaves_entry:0 "策展人、艺术家、商人城邦空间站"
- locateit_menu_enclaves_entry.tooltip:0 "标记所有已知的空间站"
+ locateit_menu_enclaves_entry.tooltip:0 "定位所有已知的空间站"
+ locateit_menu_crime_entry:0 "罪企分部"
+ locateit_menu_crime_entry.tooltip:0 "标记境内所有罪企分部"
 
  locateit_menu.2.name:0 "战略资源""
  locateit_menu.2.desc:0 "选择一种战略资源来定位。注意只能定位已知位置的战略资源。"
@@ -92,17 +113,3 @@
  locateit_menu.3.4:0 "境内可升级的$megastructures$"
  locateit_menu_exit:0 "退出"
  locateit_menu_return:0 "返回"
-
-locateit_enclaves_chain_title:0 "城邦空间站位置"
-locateit_enclaves_chain_desc:0 "所有已知城邦空间站的位置。"
-locateit_guardians_chain_title:0 "利维坦位置"
-locateit_guardians_chain_desc:0 "所有已知利维坦的位置。"
-locateit_enclaves_sp:0 "一个已知的城邦空间站"
-locateit_enclaves_sp_DESC:0 "一个已知的城邦空间站。"
-locateit_enclaves_sp_mute:0 "$locateit_research_to_mute_all$"
-locateit_enclaves_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
-locateit_guardians_sp:0 "一个已知的利维坦"
-locateit_guardians_sp_DESC:0 "一个已知的利维坦。"
-locateit_guardians_sp_mute:0 "$locateit_research_to_mute_all$"
-locateit_guardians_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
- 

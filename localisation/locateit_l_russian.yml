@@ -1,6 +1,6 @@
 ﻿l_russian:
  
- # Special Projects
+ # Event chains
  loacateit_track_all:0 ""$TRACK_ALL$" to pin them on map."
  locateit_research_to_mute_all:0 "Research to hide all"
  locateit_research_to_mute:0 "Research to hide this entry on galaxy map"
@@ -16,7 +16,14 @@
  locateit_wormhole_chain_desc:0 "All known locations of $apoc.5.name$s. $loacateit_track_all$"
  locateit_mega_cons_chain_title:0 "All upgradable $megastructures$"
  locateit_mega_cons_chain_desc:0 "All upgradable $megastructures$ within our border."
-
+ locateit_enclaves_chain_title:0 "All known Enclaves"
+ locateit_enclaves_chain_desc:0 "Locations of all known Enclaves"
+ locateit_guardians_chain_title:0 "All known Leviathans"
+ locateit_guardians_chain_desc:0 "Locations of all known Leviathans"
+ locateit_crime_chain_title:0 "Branch offices of Criminal Syndicates"
+ locateit_crime_chain_desc:0 "All locations of branch offices of Criminal Syndicates within our border."
+ 
+ # Special projects
  locateit_resource_sp:0 "Strategic Resource"
  locateit_resource_sp_DESC:0 "A known deposit of this strategic resource. ."
  locateit_resource_sp_capital:0 "$locateit_research_to_mute_all$"
@@ -41,6 +48,18 @@
  locateit_mega_cons_sp_DESC:0 "An upgradable $MEGASTRUCTURE$ within our border. ."
  locateit_mega_cons_sp_capital:0 "$locateit_resource_sp_capital$"
  locateit_mega_cons_sp_capital_DESC:0 "$locateit_resource_sp_capital_DESC$"
+ locateit_enclaves_sp:0 "Location of a Enclave"
+ locateit_enclaves_sp_DESC:0 "A known Enclave."
+ locateit_enclaves_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_enclaves_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
+ locateit_guardians_sp:0 "Location of a Leviathan"
+ locateit_guardians_sp_DESC:0 "A known Leviathan."
+ locateit_guardians_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_guardians_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
+ locateit_crime_sp:0 "A branch office of Criminal Syndicate"
+ locateit_crime_sp_DESC:0 "A branch office of Criminal Syndicate on our planet."
+ locateit_crime_sp_mute:0 "$locateit_research_to_mute_all$"
+ locateit_crime_sp_mute_DESC:0 "$locateit_resource_sp_capital_DESC$"
 
  # Menu
  modmenu_locateit:0 "Locate It!"
@@ -92,15 +111,3 @@
  locateit_menu_exit:0 "Exit"
  locateit_menu_return:0 "Return"
 
-locateit_enclaves_chain_title:0 "All known Enclaves"
-locateit_enclaves_chain_desc:0 "Locations of all known Enclaves"
-locateit_guardians_chain_title:0 "All known Leviathans"
-locateit_guardians_chain_desc:0 "Locations of all known Leviathans"
-locateit_enclaves_sp:0 "Location of a Enclave"
-locateit_enclaves_sp_DESC:0 "A known Enclave."
-locateit_enclaves_sp_mute:0 "$locateit_research_to_mute_all$"
-locateit_enclaves_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"
-locateit_guardians_sp:0 "Location of a Leviathan"
-locateit_guardians_sp_DESC:0 "A known Leviathan."
-locateit_guardians_sp_mute:0 "$locateit_research_to_mute_all$"
-locateit_guardians_sp_mute_DESC:0 ""$locateit_resource_sp_capital_DESC$"

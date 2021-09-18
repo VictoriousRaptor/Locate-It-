@@ -153,7 +153,7 @@ country_event = {
 	}
 }
 
-# Encalves
+# Enclaves
 country_event = {
 	id = locateit.31
 	hide_window = yes
@@ -166,7 +166,7 @@ country_event = {
 	}
 }
 
-# Encalves
+# Guardians
 country_event = {
 	id = locateit.32
 	hide_window = yes
@@ -175,6 +175,19 @@ country_event = {
 		if = {
 			limit = { has_event_chain = locateit_guardians_chain }
 			end_event_chain = locateit_guardians_chain
+		}
+	}
+}
+
+# Crime
+country_event = {
+	id = locateit.33
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_crime_chain }
+			end_event_chain = locateit_crime_chain
 		}
 	}
 }
@@ -592,6 +605,36 @@ country_event = {
 				name = locateit_guardians_sp
 				location = star
 				owner = root
+			}
+		}
+	}
+}
+
+# crime
+country_event = {
+	id = locateit.401
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_begin_chain = {
+			PROJECT_NAME = locateit_enclaves_sp_mute
+			CHAIN_NAME = locateit_enclaves_chain
+		}
+		every_country = {
+			limit = {
+				is_criminal_syndicate = yes
+			}
+			root = {
+				every_owned_planet = {
+					limit = {
+						has_branch_office = prev
+					}
+					enable_special_project = {
+						name = locateit_enclaves_sp
+						location = star
+						owner = root
+					}
+				}
 			}
 		}
 	}

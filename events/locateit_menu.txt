@@ -52,6 +52,17 @@ country_event = {
 		}
 	}
 
+	# Crime Branch Office
+	option = {
+		name = locateit_menu_crime_entry
+		custom_tooltip = locateit_menu_crime_entry.tooltip
+		hidden_effect = {
+			country_event = {
+				id = locateit.401
+			}
+		}
+	}
+
 	# Debug
 	option = {
 		name = locateit_menu_clr_entry
