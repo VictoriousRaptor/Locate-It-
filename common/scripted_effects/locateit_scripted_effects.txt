@@ -43,7 +43,7 @@ locateit_begin_chain = {
 		target = root
 	}
 	enable_special_project = {
-		name = $PROJECT_NAME$
+		name = $CLEANER_PROJECT_NAME$
 		owner = root
 	}
 }

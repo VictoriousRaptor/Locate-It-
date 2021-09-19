@@ -253,3 +253,41 @@ special_project = {
 	}
 	on_fail = {}
 }
+
+special_project = {
+	key = "locateit_crime_sp"
+	event_scope = country_event
+	event_chain = locateit_crime_chain
+	picture = GFX_evt_tradestation_interior
+	cost = 0
+	location = no
+	days_to_research = 1
+	timelimit = -1
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.33 # 
+			}
+		}
+	}
+	on_fail = {}
+}
+
+special_project = {
+	key = "locateit_crime_sp_mute"
+	event_scope = country_event
+	event_chain = locateit_crime_chain
+	picture = GFX_evt_tradestation_interior
+	cost = 0
+	location = no
+	days_to_research = 1
+	timelimit = -1
+	on_success = { 
+		fromfromfrom = {
+			country_event = {
+				id = locateit.33
+			}
+		}
+	}
+	on_fail = {}
+}

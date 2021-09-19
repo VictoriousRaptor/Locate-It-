@@ -153,7 +153,7 @@ country_event = {
 	}
 }
 
-# Encalves
+# Enclaves
 country_event = {
 	id = locateit.31
 	hide_window = yes
@@ -166,7 +166,11 @@ country_event = {
 	}
 }
 
+<<<<<<< HEAD
 # Enclaves
+=======
+# Guardians
+>>>>>>> test
 country_event = {
 	id = locateit.32
 	hide_window = yes
@@ -175,6 +179,19 @@ country_event = {
 		if = {
 			limit = { has_event_chain = locateit_guardians_chain }
 			end_event_chain = locateit_guardians_chain
+		}
+	}
+}
+
+# Crime
+country_event = {
+	id = locateit.33
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_event_chain = locateit_crime_chain }
+			end_event_chain = locateit_crime_chain
 		}
 	}
 }
@@ -393,7 +410,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_megastructure_sp_capital
+			CLEANER_PROJECT_NAME = locateit_megastructure_sp_capital
 			CHAIN_NAME = locateit_mega_chain
 		}
 		every_megastructure = {
@@ -420,7 +437,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_gate_sp_capital
+			CLEANER_PROJECT_NAME = locateit_gate_sp_capital
 			CHAIN_NAME = locateit_gate_chain
 		}
 		every_megastructure = {
@@ -444,7 +461,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_lgate_sp_capital
+			CLEANER_PROJECT_NAME = locateit_lgate_sp_capital
 			CHAIN_NAME = locateit_lgate_chain
 		}
 		every_megastructure = {
@@ -468,7 +485,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_wormhole_sp_capital
+			CLEANER_PROJECT_NAME = locateit_wormhole_sp_capital
 			CHAIN_NAME = locateit_wormhole_chain
 		}
 		every_system = {
@@ -492,7 +509,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_mega_cons_sp_capital
+			CLEANER_PROJECT_NAME = locateit_mega_cons_sp_capital
 			CHAIN_NAME = locateit_mega_cons_chain
 		}
 		every_owned_megastructure = {
@@ -516,7 +533,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_enclaves_sp_mute
+			CLEANER_PROJECT_NAME = locateit_enclaves_sp_mute
 			CHAIN_NAME = locateit_enclaves_chain
 		}
 		every_system = {
@@ -547,7 +564,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_guardians_sp_mute
+			CLEANER_PROJECT_NAME = locateit_guardians_sp_mute
 			CHAIN_NAME = locateit_guardians_chain
 		}
 		every_system = {
@@ -592,6 +609,36 @@ country_event = {
 				name = locateit_guardians_sp
 				location = star
 				owner = root
+			}
+		}
+	}
+}
+
+# crime
+country_event = {
+	id = locateit.401
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		locateit_begin_chain = {
+			CLEANER_PROJECT_NAME = locateit_crime_sp_mute
+			CHAIN_NAME = locateit_crime_chain
+		}
+		every_country = {
+			limit = {
+				is_criminal_syndicate = yes
+			}
+			root = {
+				every_owned_planet = {
+					limit = {
+						has_branch_office = prev
+					}
+					enable_special_project = {
+						name = locateit_crime_sp
+						location = THIS
+						owner = root
+					}
+				}
 			}
 		}
 	}
