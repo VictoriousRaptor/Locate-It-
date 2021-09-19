@@ -406,7 +406,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_megastructure_sp_capital
+			CLEANER_PROJECT_NAME = locateit_megastructure_sp_capital
 			CHAIN_NAME = locateit_mega_chain
 		}
 		every_megastructure = {
@@ -433,7 +433,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_gate_sp_capital
+			CLEANER_PROJECT_NAME = locateit_gate_sp_capital
 			CHAIN_NAME = locateit_gate_chain
 		}
 		every_megastructure = {
@@ -457,7 +457,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_lgate_sp_capital
+			CLEANER_PROJECT_NAME = locateit_lgate_sp_capital
 			CHAIN_NAME = locateit_lgate_chain
 		}
 		every_megastructure = {
@@ -481,7 +481,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_wormhole_sp_capital
+			CLEANER_PROJECT_NAME = locateit_wormhole_sp_capital
 			CHAIN_NAME = locateit_wormhole_chain
 		}
 		every_system = {
@@ -505,7 +505,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_mega_cons_sp_capital
+			CLEANER_PROJECT_NAME = locateit_mega_cons_sp_capital
 			CHAIN_NAME = locateit_mega_cons_chain
 		}
 		every_owned_megastructure = {
@@ -529,7 +529,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_enclaves_sp_mute
+			CLEANER_PROJECT_NAME = locateit_enclaves_sp_mute
 			CHAIN_NAME = locateit_enclaves_chain
 		}
 		every_system = {
@@ -560,7 +560,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_guardians_sp_mute
+			CLEANER_PROJECT_NAME = locateit_guardians_sp_mute
 			CHAIN_NAME = locateit_guardians_chain
 		}
 		every_system = {
@@ -617,8 +617,8 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		locateit_begin_chain = {
-			PROJECT_NAME = locateit_enclaves_sp_mute
-			CHAIN_NAME = locateit_enclaves_chain
+			CLEANER_PROJECT_NAME = locateit_crime_sp_mute
+			CHAIN_NAME = locateit_crime_chain
 		}
 		every_country = {
 			limit = {
@@ -630,8 +630,8 @@ country_event = {
 						has_branch_office = prev
 					}
 					enable_special_project = {
-						name = locateit_enclaves_sp
-						location = star
+						name = locateit_crime_sp
+						location = THIS
 						owner = root
 					}
 				}
