@@ -166,11 +166,7 @@ country_event = {
 	}
 }
 
-<<<<<<< HEAD
-# Enclaves
-=======
 # Guardians
->>>>>>> test
 country_event = {
 	id = locateit.32
 	hide_window = yes
