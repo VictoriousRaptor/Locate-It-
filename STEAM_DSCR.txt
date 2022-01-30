@@ -1,0 +1,49 @@
+[b]Helps you pin everything important, e.g. strategic resources, Leviathans and Megastructures on you map.[/b]
+
+[h1]Locate all strategic resources and megastructures on your map![/h1]
+
+Tired of finding living metal on your galaxy map? Busy checking your system one by one to find if there's a unfinished gateway?
+
+[b]This mod helps you locate strategic resources and megastructures though cannot search directly due to Paradox's limitation. It can mark strategic resources or megastructures in surveyed systems on your map.[/b]
+
+[h1]Main Features[/h1]
+[list]
+    [*]Pin strategic resources and megastructures on your map.
+    [*]Pin unexploited strategic resources within your border.
+    [*]Pin Levathans and Enclaves.
+    [*]Also pin upgradable megastructures within your border.
+    [*]And more...
+[/list]
+
+[h1]Usage[/h1]
+[olist]
+    [*]Subscribe first!
+    [*]Choose one between[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]and[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url] to subscribe.[b]If you are using UI Overhaul Dynamic, please use Dynamic Mod Menu for better compatibility.[/b]
+    [*]If you are using [b]Mod Menu[/b], open the mod menu in the government tab (top-left corner). If you are using [b]DMM[/b] pleas press Esc, press Mod Settings and press Esc again.
+    [*]Follow the guide in the popup menu. Choose what you wanna locate, then find it in your situation log, and click "Track all on map"*.
+[/olist] 
+
+[h2]How to Remove the Event Chain/Pins[/h2]
+
+Research the top-most special project in the event chain to hide the event chain.
+
+[h2]Compatibility[/h2]
+
+Not achievement compatible. Compatible with game version 3.2.*. Should be compatible with all mods.
+
+[h2]Others[/h2]
+
+[h3]My Other Mods[/h3]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2733387271]No More Charging Battleships Or Titans[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2247594997]Societal Advancement (fixed)[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2254396324]Demilitarize (fixed)[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2736965712]Gray Warship With Jump Drive[/url]
+
+[h3]GitHub Repository[/h3]
+
+[url=https://github.com/VictoriousRaptor/Locate-It-]Locate It![/url]
+
+Under MIT License
+
+[img]https://i.imgur.com/fVVaDCS.gif[/img]

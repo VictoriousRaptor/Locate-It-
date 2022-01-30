@@ -1,0 +1,43 @@
+还在为忘了活体金属在哪而发愁吗？还在满地找自己家里哪还有没升级的星门吗？
+
+本mod着力于轻松帮你找到战略资源和巨构建筑，不再需要盯着一个个星系苦苦寻找重要的战略资源或者巨构，[b]帮你标出调查过的星系中是否有战略资源或巨构建筑等等，保护你的眼睛。[/b]
+
+[h1]主要功能[/h1]
+[list]
+    [*]可以在地图上标示出某种战略资源或者巨构
+    [*]可以标示境内（拥有科技但）未开发的战略资源
+    [*]可以标示出境内待升级的巨构（比如星门）
+    [*]可以标示出利维坦、策展人、商人空间站等
+    [*]等等……
+[/list] 
+
+[h1]使用方法[/h1]
+[olist]
+    [*]订阅本mod。
+    [*]在[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]和[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url]中选择一个来订阅。[b]如果你同时在使用UI Overhaul Dynamic，建议使用Dynamic Mod Menu，因为Mod Menu可能不兼容。[/b]
+    [*]如果使用Mod Menu，在政府页面（左上角国徽处）打开mod菜单；如果使用Dynamic Mod Menu，按Esc，选择Mod Settings，再按一次Esc。
+    [*]按照菜单中的指引操作即可。选择需要定位的对象，[i]然后在情报日志中找到对应的事件链，选择“在地图上追踪全部”。[/i]
+[/olist] 
+
+[h2]如何从情报日志中删除[/h2]
+
+研究事件链中第一个特殊项目可以隐藏整个事件链。
+
+
+[h2]兼容性[/h2]
+
+使用本mod时无法获得成就。兼容3.2.x版本。
+
+[h3]我的其他Mod[/h3]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2733387271]No More Charging Battleships Or Titans 不再冲锋的战列和泰坦[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2736965712]Gray Warship With Jump Drive 给灰风装上跃迁引擎[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2247594997]Societal Advancement (fixed)[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2254396324]Demilitarize (fixed)[/url]
+
+[h3]GitHub Repository[/h3]
+
+[url=https://github.com/VictoriousRaptor/Locate-It-]Locate It![/url]
+Under MIT License
+
+[img]https://i.imgur.com/fVVaDCS.gif[/img]
