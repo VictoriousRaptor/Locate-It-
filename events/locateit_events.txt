@@ -1,12 +1,15 @@
 namespace = locateit
-
 event = {
 	id = locateit.0
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { NOT = { has_global_flag = locateit_activated } }
+			limit = {
+				NOT = {
+					has_global_flag = locateit_activated
+				}
+			}
 			set_global_flag = locateit_activated
 		}
 	}
@@ -49,7 +52,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_res_chain }
+			limit = {
+				has_event_chain = locateit_res_chain
+			}
 			end_event_chain = locateit_res_chain
 		}
 	}
@@ -95,7 +100,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_mega_chain }
+			limit = {
+				has_event_chain = locateit_mega_chain
+			}
 			end_event_chain = locateit_mega_chain
 		}
 	}
@@ -108,7 +115,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_gate_chain }
+			limit = {
+				has_event_chain = locateit_gate_chain
+			}
 			end_event_chain = locateit_gate_chain
 		}
 	}
@@ -121,7 +130,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_lgate_chain }
+			limit = {
+				has_event_chain = locateit_lgate_chain
+			}
 			end_event_chain = locateit_lgate_chain
 		}
 	}
@@ -134,7 +145,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_wormhole_chain }
+			limit = {
+				has_event_chain = locateit_wormhole_chain
+			}
 			end_event_chain = locateit_wormhole_chain
 		}
 	}
@@ -147,7 +160,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_mega_cons_chain }
+			limit = {
+				has_event_chain = locateit_mega_cons_chain
+			}
 			end_event_chain = locateit_mega_cons_chain
 		}
 	}
@@ -160,7 +175,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_enclaves_chain }
+			limit = {
+				has_event_chain = locateit_enclaves_chain
+			}
 			end_event_chain = locateit_enclaves_chain
 		}
 	}
@@ -173,7 +190,9 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_guardians_chain }
+			limit = {
+				has_event_chain = locateit_guardians_chain
+			}
 			end_event_chain = locateit_guardians_chain
 		}
 	}
@@ -186,12 +205,13 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { has_event_chain = locateit_crime_chain }
+			limit = {
+				has_event_chain = locateit_crime_chain
+			}
 			end_event_chain = locateit_crime_chain
 		}
 	}
 }
-
 
 country_event = {
 	# Violate Motes
@@ -284,7 +304,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				has_event_chain = locateit_res_chain
 			}
 			end_event_chain = locateit_res_chain
@@ -353,7 +373,7 @@ country_event = {
 				location = THIS
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -361,7 +381,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -382,7 +402,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		if = {
-			limit = { 
+			limit = {
 				has_event_chain = locateit_res_chain
 			}
 			end_event_chain = locateit_res_chain
@@ -421,7 +441,7 @@ country_event = {
 				location = THIS
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -429,7 +449,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -470,7 +490,7 @@ country_event = {
 				location = star
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -478,7 +498,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -516,7 +536,7 @@ country_event = {
 				location = star
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -524,7 +544,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -562,7 +582,7 @@ country_event = {
 				location = star
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -570,7 +590,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -608,7 +628,7 @@ country_event = {
 				location = star
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -616,7 +636,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -654,7 +674,7 @@ country_event = {
 				location = star
 				owner = root
 			}
-			prev = {
+			root = {
 				change_variable = {
 					which = count
 					value = 1
@@ -662,7 +682,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -699,15 +719,26 @@ country_event = {
 				limit = {
 					solar_system = {
 						has_star_flag = enclave
-						locateit_in_surveyed_system = yes
+						OR = {
+							is_surveyed = {
+								who = root
+								status = yes
+							}
+							root = {
+								intel_level = {
+									level > low
+									system = prev
+								}
+							}
+						}
 					}
 				}
 				enable_special_project = {
 					name = locateit_enclaves_sp
-					location = star
+					location = this
 					owner = root
 				}
-				prev = {
+				root = {
 					change_variable = {
 						which = count
 						value = 1
@@ -715,22 +746,8 @@ country_event = {
 				}
 			}
 		}
-		# every_system = {
-		# 	limit = {
-		# 		has_star_flag = enclave
-		# 		any_fleet_in_system = {
-		# 			exists = owner
-		# 			owner = {
-		# 				is_country_type = enclave
-		# 				has_communications = root-
-		# 			}
-		# 		}
-		# 		locateit_in_surveyed_system = yes
-		# 	}
-
-		# }
 		if = {
-			limit = { 
+			limit = {
 				check_variable = {
 					which = count
 					value = 0
@@ -745,8 +762,7 @@ country_event = {
 }
 
 country_event = {
-	# Guardians, static ones only
-	# TODO L-Dragon and more
+	# Guardians
 	id = locateit.301
 	hide_window = yes
 	is_triggered_only = yes
@@ -759,66 +775,79 @@ country_event = {
 			which = count
 			value = 0
 		}
-		every_system = {
-			#leviathans_events.txt 6350 6260
+		# Excluding L-Dragon & Wratih
+		every_country = {
 			limit = {
-				OR = {
-					has_star_flag = guardians_horror_system
-					has_star_flag = guardians_dreadnought_system
-					has_star_flag = guardians_hive_system
-					has_star_flag = guardians_technosphere_system
-					has_star_flag = guardians_fortress_system
-					has_star_flag = guardians_stellarite_system		
-					has_star_flag = scavenger_bot_system
-					has_star_flag = guardians_hatchling_system
-					has_star_flag = elderly_tiyanki_system
-					has_star_flag = guardians_dragon_system
+				is_guardian_country = yes
+				NOT = {
+					is_country_type = guardian_wraith  # moving
 				}
-				any_fleet_in_system = {
-					exists = owner
-					owner = {
-						is_guardian_country = yes
-						NOT = { is_country_type = guardian }
-						OR = {
-							is_country_type = guardian_dragon
-							is_country_type = guardian_fortress
-							is_country_type = guardian_stellarite
-							is_country_type = guardian_horror
-							is_country_type = guardian_hiver
-							is_country_type = guardian_sphere
-							is_country_type = guardian_dreadnought
-							# is_country_type = guardian_wraith
-							is_country_type = guardian_hatchling
-							is_country_type = guardian_scavenger_bot
-							is_country_type = guardian_elderly_tiyanki
+				has_communications = root
+			}
+			every_owned_fleet = {
+				limit = {
+					OR = {
+						solar_system = {
+							is_surveyed = {
+								who = root
+								status = yes
+							}
+							root = {
+								intel_level = {
+									level > low
+									system = prev
+								}
+							}
 						}
-						has_communications = root
 					}
 				}
-				locateit_in_surveyed_system = yes
-			}
-			enable_special_project = {
-				name = locateit_guardians_sp
-				location = star
-				owner = root
-			}
-			prev = {
-				change_variable = {
-					which = count
-					value = 1
+				enable_special_project = {
+					name = locateit_guardians_sp
+					location = this
+					owner = root
+				}
+				root = {
+					change_variable = {
+						which = count
+						value = 1
+					}
 				}
 			}
-		}
-		if = {
-			limit = { 
-				check_variable = {
-					which = count
-					value = 0
+			every_country = {
+				limit = {
+					OR = {
+						is_country_type = ldragon_country
+						is_country_type = guardian_wraith
+					}
+				}
+				every_owned_fleet = {
+					limit = {
+						root = {
+							intel_level = {
+								level >= high
+								system = prev.solar_system
+							}
+						}
+					}
+				}
+				root = {
+					change_variable = {
+						which = count
+						value = 1
+					}
 				}
 			}
-			end_event_chain = locateit_guardians_chain
-			country_event = {
-				id = locateit.99
+			if = {
+				limit = {
+					check_variable = {
+						which = count
+						value = 0
+					}
+				}
+				end_event_chain = locateit_enclaves_chain
+				country_event = {
+					id = locateit.99
+				}
 			}
 		}
 	}
@@ -860,7 +889,6 @@ country_event = {
 	is_triggered_only = yes
 	title = "locateit_cannot_find"
 	desc = "locateit_cannot_find_desc"
-
 	option = {
 		name = locate_it_confirm
 	}

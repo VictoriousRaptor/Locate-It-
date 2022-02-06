@@ -1,26 +1,14 @@
 locateit_find_resource = {
-	if = {
-		limit = { 
-			has_event_chain = locateit_res_chain
-		}
-		end_event_chain = locateit_res_chain
+	locateit_begin_chain = {
+		CHAIN_NAME = locateit_res_chain
+		CLEANER_PROJECT_NAME = locateit_resource_sp_capital
 	}
-	begin_event_chain = {
-		event_chain = locateit_res_chain
-		target = root
-	}
-	# Assure that at least one SP can be researched
-	capital_star = {
-		enable_special_project = {
-			name = locateit_resource_sp_capital
-			location = this
-			owner = root
-		}
-	}
+
 	set_variable = {
 		which = count
 		value = 0
 	}
+
 	every_galaxy_planet = {
 		limit = {
 			has_resource = $RESOURCE$
@@ -58,7 +46,7 @@ locateit_find_resource = {
 
 locateit_begin_chain = {
 	if = {
-		limit = { 
+		limit = {
 			has_event_chain = $CHAIN_NAME$
 		}
 		end_event_chain = $CHAIN_NAME$
@@ -67,10 +55,9 @@ locateit_begin_chain = {
 		event_chain = $CHAIN_NAME$
 		target = root
 	}
-	capital_star = {
-		enable_special_project = {
-			name = $CLEANER_PROJECT_NAME$
-			owner = root
-		}
+	enable_special_project = {
+		name = $CLEANER_PROJECT_NAME$
+		location = capital_star
+		owner = root
 	}
 }
