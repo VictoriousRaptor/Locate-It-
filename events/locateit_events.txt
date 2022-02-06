@@ -780,14 +780,14 @@ country_event = {
 			limit = {
 				is_guardian_country = yes
 				NOT = {
-					is_country_type = guardian_wraith  # moving
+					is_country_type = guardian_wraith					# moving
 				}
 				has_communications = root
 			}
 			every_owned_fleet = {
 				limit = {
-					OR = {
-						solar_system = {
+					solar_system = {
+						OR = {
 							is_surveyed = {
 								who = root
 								status = yes
@@ -813,22 +813,29 @@ country_event = {
 					}
 				}
 			}
-			every_country = {
-				limit = {
-					OR = {
-						is_country_type = ldragon_country
-						is_country_type = guardian_wraith
-					}
+		}
+		# L-Dragon & Wratih
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = ldragon_country
+					is_country_type = guardian_wraith
 				}
-				every_owned_fleet = {
-					limit = {
-						root = {
-							intel_level = {
-								level >= high
-								system = prev.solar_system
-							}
+				has_communications = root
+			}
+			every_owned_fleet = {
+				limit = {
+					root = {
+						intel_level = {
+							level > medium
+							system = prev.solar_system
 						}
 					}
+				}
+				enable_special_project = {
+					name = locateit_guardians_sp
+					location = this
+					owner = root
 				}
 				root = {
 					change_variable = {
@@ -837,17 +844,17 @@ country_event = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					check_variable = {
-						which = count
-						value = 0
-					}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = count
+					value = 0
 				}
-				end_event_chain = locateit_enclaves_chain
-				country_event = {
-					id = locateit.99
-				}
+			}
+			end_event_chain = locateit_guardians_chain
+			country_event = {
+				id = locateit.99
 			}
 		}
 	}
@@ -889,6 +896,7 @@ country_event = {
 	is_triggered_only = yes
 	title = "locateit_cannot_find"
 	desc = "locateit_cannot_find_desc"
+	picture = GFX_evt_decryption
 	option = {
 		name = locate_it_confirm
 	}
