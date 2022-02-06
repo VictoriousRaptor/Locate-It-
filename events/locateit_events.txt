@@ -12,8 +12,8 @@ event = {
 	}
 }
 
-# Dynamic Mod Menu support
 event = {
+	# Dynamic Mod Menu support
 	id = locateit.1
 	hide_window = yes
 	is_triggered_only = yes
@@ -25,8 +25,8 @@ event = {
 	}
 }
 
-# Open menu in DMM
 country_event = {
+	# Open menu in DMM
 	id = locateit.2
 	is_triggered_only = yes
 	hide_window = yes
@@ -42,8 +42,8 @@ country_event = {
 	}
 }
 
-# Cleaner
 country_event = {
+	# Cleaner
 	id = locateit.10
 	hide_window = yes
 	is_triggered_only = yes
@@ -55,8 +55,8 @@ country_event = {
 	}
 }
 
-# Clear all
 country_event = {
+	# Clear all
 	id = locateit.11
 	hide_window = yes
 	is_triggered_only = yes
@@ -88,8 +88,8 @@ country_event = {
 	}
 }
 
-# All megastructures (not including gates and L-gates)
 country_event = {
+	# Clear all megastructures (not including gates and L-gates)
 	id = locateit.20
 	hide_window = yes
 	is_triggered_only = yes
@@ -101,8 +101,8 @@ country_event = {
 	}
 }
 
-# Gates
 country_event = {
+	# Clear Gates
 	id = locateit.21
 	hide_window = yes
 	is_triggered_only = yes
@@ -114,8 +114,8 @@ country_event = {
 	}
 }
 
-# L-gates
 country_event = {
+	# Clear L-gates
 	id = locateit.22
 	hide_window = yes
 	is_triggered_only = yes
@@ -127,8 +127,8 @@ country_event = {
 	}
 }
 
-# Wormholes
 country_event = {
+	# Clear Wormholes
 	id = locateit.23
 	hide_window = yes
 	is_triggered_only = yes
@@ -140,8 +140,8 @@ country_event = {
 	}
 }
 
-# Under construction or upgradable
 country_event = {
+	# Clear Under construction or upgradable
 	id = locateit.24
 	hide_window = yes
 	is_triggered_only = yes
@@ -153,8 +153,8 @@ country_event = {
 	}
 }
 
-# Enclaves
 country_event = {
+	# Clear Enclaves
 	id = locateit.31
 	hide_window = yes
 	is_triggered_only = yes
@@ -166,8 +166,8 @@ country_event = {
 	}
 }
 
-# Guardians
 country_event = {
+	# Clear Guardians
 	id = locateit.32
 	hide_window = yes
 	is_triggered_only = yes
@@ -179,8 +179,8 @@ country_event = {
 	}
 }
 
-# Crime
 country_event = {
+	# Clear Crime
 	id = locateit.33
 	hide_window = yes
 	is_triggered_only = yes
@@ -193,8 +193,8 @@ country_event = {
 }
 
 
-# Violate Motes
 country_event = {
+	# Violate Motes
 	id = locateit.102
 	hide_window = yes
 	is_triggered_only = yes
@@ -205,8 +205,8 @@ country_event = {
 	}
 }
 
-# Exotic Gases
 country_event = {
+	# Exotic Gases
 	id = locateit.103
 	hide_window = yes
 	is_triggered_only = yes
@@ -217,8 +217,8 @@ country_event = {
 	}
 }
 
-# Rare Crystals
 country_event = {
+	# Rare Crystals
 	id = locateit.104
 	hide_window = yes
 	is_triggered_only = yes
@@ -229,8 +229,8 @@ country_event = {
 	}
 }
 
-# Dark Matter
 country_event = {
+	# Dark Matter
 	id = locateit.105
 	hide_window = yes
 	is_triggered_only = yes
@@ -241,8 +241,8 @@ country_event = {
 	}
 }
 
-# Living Metal
 country_event = {
+	# Living Metal
 	id = locateit.106
 	hide_window = yes
 	is_triggered_only = yes
@@ -253,8 +253,8 @@ country_event = {
 	}
 }
 
-# Zro
 country_event = {
+	# Zro
 	id = locateit.107
 	hide_window = yes
 	is_triggered_only = yes
@@ -265,8 +265,8 @@ country_event = {
 	}
 }
 
-# Nanites
 country_event = {
+	# Nanites
 	id = locateit.108
 	hide_window = yes
 	is_triggered_only = yes
@@ -277,8 +277,8 @@ country_event = {
 	}
 }
 
-# Unexploited
 country_event = {
+	# Unexploited
 	id = locateit.109
 	hide_window = yes
 	is_triggered_only = yes
@@ -297,6 +297,10 @@ country_event = {
 		enable_special_project = {
 			name = locateit_resource_sp_capital
 			owner = root
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_planet_within_border = {
 			limit = {
@@ -349,12 +353,30 @@ country_event = {
 				location = THIS
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_res_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# All
 country_event = {
+	# All
 	id = locateit.110
 	hide_window = yes
 	is_triggered_only = yes
@@ -372,6 +394,10 @@ country_event = {
 		enable_special_project = {
 			name = locateit_resource_sp_capital
 			owner = root
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_galaxy_planet = {
 			limit = {
@@ -395,12 +421,30 @@ country_event = {
 				location = THIS
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_res_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# Megastructures, not including gates
 country_event = {
+	# Megastructures, not including gates
 	id = locateit.200
 	hide_window = yes
 	is_triggered_only = yes
@@ -408,6 +452,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_megastructure_sp_capital
 			CHAIN_NAME = locateit_mega_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_megastructure = {
 			limit = {
@@ -422,12 +470,30 @@ country_event = {
 				location = star
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_mega_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# Gateways
 country_event = {
+	# Gateways
 	id = locateit.201
 	hide_window = yes
 	is_triggered_only = yes
@@ -435,6 +501,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_gate_sp_capital
 			CHAIN_NAME = locateit_gate_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_megastructure = {
 			limit = {
@@ -446,12 +516,30 @@ country_event = {
 				location = star
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_gate_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# L-Gates
 country_event = {
+	# L-Gates
 	id = locateit.202
 	hide_window = yes
 	is_triggered_only = yes
@@ -459,6 +547,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_lgate_sp_capital
 			CHAIN_NAME = locateit_lgate_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_megastructure = {
 			limit = {
@@ -470,12 +562,30 @@ country_event = {
 				location = star
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_lgate_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# Wormholes
 country_event = {
+	# Wormholes
 	id = locateit.203
 	hide_window = yes
 	is_triggered_only = yes
@@ -483,6 +593,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_wormhole_sp_capital
 			CHAIN_NAME = locateit_wormhole_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_system = {
 			limit = {
@@ -494,12 +608,30 @@ country_event = {
 				location = star
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_wormhole_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
 
-# Idle Megastructures
 country_event = {
+	# Idle Megastructures
 	id = locateit.204
 	hide_window = yes
 	is_triggered_only = yes
@@ -507,6 +639,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_mega_cons_sp_capital
 			CHAIN_NAME = locateit_mega_cons_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_owned_megastructure = {
 			limit = {
@@ -517,6 +653,24 @@ country_event = {
 				name = locateit_mega_cons_sp
 				location = star
 				owner = root
+			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_mega_cons_chain
+			country_event = {
+				id = locateit.99
 			}
 		}
 	}
@@ -532,29 +686,67 @@ country_event = {
 			CLEANER_PROJECT_NAME = locateit_enclaves_sp_mute
 			CHAIN_NAME = locateit_enclaves_chain
 		}
-		every_system = {
+		set_variable = {
+			which = count
+			value = 0
+		}
+		every_country = {
 			limit = {
-				has_star_flag = enclave
-				any_fleet_in_system = {
-					exists = owner
-					owner = {
-						is_country_type = enclave
-						has_communications = root
+				is_country_type = enclave
+				has_communications = root
+			}
+			every_owned_fleet = {
+				limit = {
+					solar_system = {
+						has_star_flag = enclave
+						locateit_in_surveyed_system = yes
 					}
 				}
-				locateit_in_surveyed_system = yes
+				enable_special_project = {
+					name = locateit_enclaves_sp
+					location = star
+					owner = root
+				}
+				prev = {
+					change_variable = {
+						which = count
+						value = 1
+					}
+				}
 			}
-			enable_special_project = {
-				name = locateit_enclaves_sp
-				location = star
-				owner = root
+		}
+		# every_system = {
+		# 	limit = {
+		# 		has_star_flag = enclave
+		# 		any_fleet_in_system = {
+		# 			exists = owner
+		# 			owner = {
+		# 				is_country_type = enclave
+		# 				has_communications = root-
+		# 			}
+		# 		}
+		# 		locateit_in_surveyed_system = yes
+		# 	}
+
+		# }
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_enclaves_chain
+			country_event = {
+				id = locateit.99
 			}
 		}
 	}
 }
 
-# Guardians
 country_event = {
+	# Guardians, static ones only
+	# TODO L-Dragon and more
 	id = locateit.301
 	hide_window = yes
 	is_triggered_only = yes
@@ -562,6 +754,10 @@ country_event = {
 		locateit_begin_chain = {
 			CLEANER_PROJECT_NAME = locateit_guardians_sp_mute
 			CHAIN_NAME = locateit_guardians_chain
+		}
+		set_variable = {
+			which = count
+			value = 0
 		}
 		every_system = {
 			#leviathans_events.txt 6350 6260
@@ -606,6 +802,24 @@ country_event = {
 				location = star
 				owner = root
 			}
+			prev = {
+				change_variable = {
+					which = count
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = count
+					value = 0
+				}
+			}
+			end_event_chain = locateit_guardians_chain
+			country_event = {
+				id = locateit.99
+			}
 		}
 	}
 }
@@ -637,5 +851,17 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	# Can't find
+	id = locateit.99
+	is_triggered_only = yes
+	title = "locateit_cannot_find"
+	desc = "locateit_cannot_find_desc"
+
+	option = {
+		name = locate_it_confirm
 	}
 }
