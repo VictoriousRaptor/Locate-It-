@@ -117,3 +117,6 @@
  locateit_cannot_find:0 "哎呀！"
  locateit_cannot_find_desc:0 "我们无法在我们的数据库里面找到相关资料！"
  locate_it_confirm:0 "确认。"
+
+ edict_locateit_edict_menu:0 "Locate It! 战略资源与巨构定位器"
+ edict_locateit_edict_menu_desc:0 "请选择你要定位的目标。"

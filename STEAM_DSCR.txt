@@ -18,7 +18,7 @@ Tired of finding living metal on your galaxy map? Busy checking your system one 
 [h1]Usage[/h1]
 [olist]
     [*]Subscribe first!
-    [*]Choose one between[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]and[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url] to subscribe.[b]If you are using UI Overhaul Dynamic, please use Dynamic Mod Menu for better compatibility.[/b]
+    [*][strike]Choose one between[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]and[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url] to subscribe.[b]If you are using UI Overhaul Dynamic, please use Dynamic Mod Menu for better compatibility.[/b][/strike] These two mods are not mandatory now. You can access the mod in Edicts -> Locate It!.
     [*]If you are using [b]Mod Menu[/b], open the mod menu in the government tab (top-left corner). If you are using [b]DMM[/b] pleas press Esc, press Mod Settings and press Esc again.
     [*]Follow the guide in the popup menu. Choose what you wanna locate, then find it in your situation log, and click "Track all on map"*.
 [/olist] 

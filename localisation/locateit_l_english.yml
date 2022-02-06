@@ -114,3 +114,6 @@
  locateit_cannot_find:0 "Oops!"
  locateit_cannot_find_desc:0 "We cannot find any related data in our database!"
  locate_it_confirm:0 "Confirm."
+
+ edict_locateit_edict_menu:0 "Locate It!"
+ edict_locateit_edict_menu_desc:0 "Choose your target."

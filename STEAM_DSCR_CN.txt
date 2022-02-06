@@ -14,7 +14,7 @@
 [h1]使用方法[/h1]
 [olist]
     [*]订阅本mod。
-    [*]在[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]和[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url]中选择一个来订阅。[b]如果你同时在使用UI Overhaul Dynamic，建议使用Dynamic Mod Menu，因为Mod Menu可能不兼容。[/b]
+    [*][strike]在[url=https://steamcommunity.com/workshop/filedetails/?id=1087781345]Mod Menu[/url]和[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521]Dynamic Mod Menu (3.1.*)[/url]中选择一个来订阅。[b]如果你同时在使用UI Overhaul Dynamic，建议使用Dynamic Mod Menu，因为Mod Menu可能不兼容。[/b][/strike]两个Mod非必选项，可以通过法令->Locate It!进入。
     [*]如果使用Mod Menu，在政府页面（左上角国徽处）打开mod菜单；如果使用Dynamic Mod Menu，按Esc，选择Mod Settings，再按一次Esc。
     [*]按照菜单中的指引操作即可。选择需要定位的对象，[i]然后在情报日志中找到对应的事件链，选择“在地图上追踪全部”。[/i]
 [/olist] 
