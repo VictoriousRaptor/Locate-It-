@@ -1,4 +1,4 @@
-[b]Helps you pin everything important, e.g. strategic resources, Leviathans and Megastructures on you map.[/b]
+[b]Helps you find and pin everything important, e.g. strategic resources, Leviathans and Megastructures on you map.[/b]
 
 [h1]Locate all strategic resources and megastructures on your map![/h1]
 

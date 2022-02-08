@@ -421,7 +421,15 @@ country_event = {
 		}
 		every_galaxy_planet = {
 			limit = {
-				has_strategic_resource = yes
+				OR = {
+					has_resource = volatile_motes
+					has_resource = exotic_gases
+					has_resource = rare_crystals
+					has_resource = sr_dark_matter
+					has_resource = sr_zro
+					has_resource = sr_living_metal
+					has_resource = nanites
+				}
 				# Must be surveyed
 				is_surveyed = {
 					who = root
