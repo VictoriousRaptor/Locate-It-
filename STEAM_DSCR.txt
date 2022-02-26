@@ -30,7 +30,7 @@ Research the top-most special project in the event chain to hide the event chain
 
 [h2]Compatibility[/h2]
 
-Not achievement compatible. Compatible with game version 3.2.*. Should be compatible with all mods.
+Not achievement compatible. Compatible with game version 3.3.*. Should be compatible with all mods.
 
 [h2]Others[/h2]
 
